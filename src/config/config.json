@@ -1,0 +1,50 @@
+{
+  "site": {
+    "title": "Cuisine - Food & Restaurant Astro Template",
+    "base_url": "https://cuisine-astro.vercel.app",
+    "base_path": "/",
+    "trailing_slash": false,
+    "favicon": "/images/favicon.png",
+    "logo": "/images/logo.svg",
+    "logo_footer": "/images/logo-footer.svg",
+    "logo_width": "189",
+    "logo_height": "39",
+    "logo_text": "Cuisine"
+  },
+
+  "settings": {
+    "sticky_header": true,
+    "contact_bar": true,
+    "pagination": 6,
+    "summary_length": 200
+  },
+
+  "params": {
+    "contact_form_action": "#",
+    "footer_text": "In the new era of technology we look a in the future with certainty and pride to for our company and.",
+    "copyright": "Copyright © 2025 [Themefisher](https://themefisher.com). All Rights Reserved"
+  },
+
+  "contact": {
+    "phone": "(123) 456 -7890",
+    "email": "info@cuisine-astro.com",
+    "address": "837 W. Marshall Lane Marshalltown, IA 50158, Los Angeles"
+  },
+
+  "navigation_button": {
+    "enable": true,
+    "label": "Get This Theme",
+    "link": "https://themefisher.com/products/cuisine-astro"
+  },
+
+  "google_tag_manager": {
+    "enable": false,
+    "gtm_id": "GTM-XXXXXX"
+  },
+
+  "metadata": {
+    "meta_author": "Themefisher",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "Food & Restaurant Astro Template"
+  }
+}

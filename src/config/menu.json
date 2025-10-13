@@ -1,0 +1,94 @@
+{
+  "main": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "About",
+      "url": "/about"
+    },
+    {
+      "name": "Menu",
+      "url": "/menu"
+    },
+    {
+      "name": "Blog",
+      "url": "/blog"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    },
+    {
+      "name": "Book A Table",
+      "url": "/book"
+    }
+  ],
+  "footer": [
+    {
+      "title": "Pages",
+      "children": [
+        {
+          "name": "Home",
+          "url": "/"
+        },
+        {
+          "name": "About",
+          "url": "/about"
+        },
+        {
+          "name": "Menu",
+          "url": "/menu"
+        },
+        {
+          "name": "Blog",
+          "url": "/blog"
+        },
+        {
+          "name": "Contact",
+          "url": "/contact"
+        }
+      ]
+    },
+    {
+      "title": "Utility Pages",
+      "children": [
+        {
+          "name": "Privacy Policy",
+          "url": "/privacy-policy"
+        },
+
+        {
+          "name": "Terms & Conditions",
+          "url": "/terms-and-conditions"
+        },
+        {
+          "name": "Elements",
+          "url": "/elements"
+        }
+      ]
+    },
+    {
+      "title": "Follow Us On Instagram",
+      "instagramImages": [
+        {
+          "image": "/images/instagram/1.png",
+          "url": "https://instagram.com"
+        },
+        {
+          "image": "/images/instagram/2.png",
+          "url": "https://instagram.com"
+        },
+        {
+          "image": "/images/instagram/3.png",
+          "url": "https://instagram.com"
+        },
+        {
+          "image": "/images/instagram/4.png",
+          "url": "https://instagram.com"
+        }
+      ]
+    }
+  ]
+}

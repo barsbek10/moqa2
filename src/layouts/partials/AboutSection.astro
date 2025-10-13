@@ -1,0 +1,124 @@
+---
+import ImageMod from "@/components/ImageMod.astro";
+import config from "@/config/config.json";
+import DynamicIcon from "@/helpers/DynamicIcon";
+import { markdownify } from "@/lib/utils/textConverter";
+import Button from "@/shortcodes/Button";
+import type { CollectionEntry } from "astro:content";
+import { getEntry } from "astro:content";
+
+const homepage = (await getEntry(
+  "homepage",
+  "-index"
+)) as CollectionEntry<"homepage">;
+
+const { about } = homepage.data;
+---
+
+{
+  about.enable && (
+    <section class="section-sm bg-primary/5 pb-18 xl:pb-24">
+      <div class="container">
+        <div class="row justify-center">
+          <div class="max-md:col-10">
+            <div class="flex flex-col lg:flex-row justify-between gap-20 lg:gap-6 items-center">
+              <div class="lg:w-[60%]">
+                <div class="relative">
+                  <ImageMod
+                    src={about.image}
+                    alt="about image"
+                    width={596}
+                    height={563}
+                    class="rounded-lg top-0 xl:-top-12"
+                    data_aos="zoom-in-sm"
+                  />
+                  <div
+                    class="py-14 px-10 bg-primary rounded-xl w-[80%] md:w-[55%] absolute left-1/2 -translate-x-1/2 md:-translate-x-[35%] -bottom-8 md:-bottom-12"
+                    data-aos="zoom-in-sm"
+                    data-aos-delay="200"
+                  >
+                    <h6 class="text-white font-primary mb-10">
+                      Come and visit us
+                    </h6>
+
+                    <div class="flex flex-col gap-2 mt-4 text-white/85 gap-y-5">
+                      {config.contact.phone && (
+                        <a
+                          href={`tel:${config.contact.phone}`}
+                          class="text-white/85 flex items-start text-sm"
+                        >
+                          <DynamicIcon
+                            icon={"FaPhone"}
+                            className="mr-2.5 shrink-0 mt-0.5"
+                          />
+                          <span>{config.contact.phone}</span>
+                        </a>
+                      )}
+
+                      {config.contact.email && (
+                        <a
+                          href={`mailto:${config.contact.email}`}
+                          class="text-white/85 flex items-start text-sm"
+                        >
+                          <DynamicIcon
+                            icon={"FaEnvelope"}
+                            className="mr-2.5 shrink-0 mt-0.5"
+                          />
+                          <span>{config.contact.email}</span>
+                        </a>
+                      )}
+
+                      {config.contact.address && (
+                        <a
+                          href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(config.contact.address)}`}
+                          class="text-white/85 flex items-start text-sm"
+                          target="_blank"
+                        >
+                          <DynamicIcon
+                            icon={"FaLocationDot"}
+                            className="mr-2.5 shrink-0 mt-0.5"
+                          />
+                          <span>{config.contact.address}</span>
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="lg:w-[40%] lg:mt-10">
+                <h2
+                  class="text-h3 md:text-h2 text-balance mb-7 text-center lg:text-left"
+                  data-aos="fade-up-sm"
+                  data-aos-delay="50"
+                  set:html={markdownify(about.title)}
+                />
+
+                <p
+                  set:html={markdownify(about.description)}
+                  class="mb-8 text-center lg:text-left"
+                  data-aos="fade-up-sm"
+                  data-aos-delay="100"
+                />
+                {about.button.enable && (
+                  <div
+                    class="w-full flex justify-center lg:justify-start"
+                    data-aos="fade-up-sm"
+                    data-aos-delay="150"
+                  >
+                    <Button
+                      link={about.button.link}
+                      label={about.button.label}
+                      className="mt-8 btn"
+                      variant="solid"
+                    />
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

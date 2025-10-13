@@ -1,0 +1,63 @@
+---
+import BlogCard from "@/components/BlogCard.astro";
+import Pagination from "@/components/Pagination.astro";
+import config from "@/config/config.json";
+import Base from "@/layouts/Base.astro";
+import { getSinglePage } from "@/lib/contentParser.astro";
+import { sortByDate } from "@/lib/utils/sortFunctions";
+import { markdownify } from "@/lib/utils/textConverter";
+import type { CollectionEntry } from "astro:content";
+import { getEntry } from "astro:content";
+
+const BLOG_FOLDER = "blog";
+
+const postIndex = (await getEntry(
+  BLOG_FOLDER,
+  "-index"
+)) as CollectionEntry<"blog">;
+const posts = await getSinglePage(BLOG_FOLDER);
+const sortedPosts = sortByDate(posts);
+const totalPages: number = Math.ceil(posts.length / config.settings.pagination);
+const currentPosts = sortedPosts.slice(0, config.settings.pagination);
+---
+
+<Base
+  title={postIndex.data.title}
+  meta_title={postIndex.data.meta_title}
+  image={postIndex.data.image}
+  description={postIndex.data.description}
+>
+  <section class="section pt-12 bg-primary/5">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="col-10 text-center capitalize">
+          <h1
+            class="mb-2 xl:text-[100px] font-normal"
+            set:html={markdownify(postIndex.data.title)}
+          />
+          <p
+            class="text-balance"
+            set:html={markdownify(postIndex.data.description || "")}
+          />
+        </div>
+      </div>
+
+      <div class="mt-14">
+        <div class="row g-4">
+          {
+            currentPosts.map((post) => (
+              <div class="md:col-4">
+                <BlogCard hideContent data={post} />
+              </div>
+            ))
+          }
+        </div>
+        <Pagination
+          section={BLOG_FOLDER}
+          currentPage={1}
+          totalPages={totalPages}
+        />
+      </div>
+    </div>
+  </section>
+</Base>

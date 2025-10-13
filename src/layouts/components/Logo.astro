@@ -1,0 +1,48 @@
+---
+import config from "@/config/config.json";
+import ImageMod from "./ImageMod.astro";
+
+type SiteConfig = {
+  logo: string;
+  logo_darkmode?: string;
+  logo_width: any; // Use a specific type instead of `any` if possible
+  logo_height: any; // Use a specific type instead of `any` if possible
+  logo_text: string;
+  title: string;
+};
+
+const { src, srcDarkmode }: { src?: string; srcDarkmode?: string } =
+  Astro.props;
+
+const {
+  logo,
+  logo_darkmode,
+  logo_width,
+  logo_height,
+  logo_text,
+  title,
+}: SiteConfig = config.site;
+---
+
+<a href="/" class="navbar-brand inline-block">
+  {
+    src || srcDarkmode || logo || logo_darkmode ? (
+      <ImageMod
+        src={src ? src : logo}
+        class={`inline-block`}
+        width={logo_width.replace("px", "") * 2}
+        height={logo_height.replace("px", "") * 2}
+        alt={title}
+        style={{
+          height: logo_height.replace("px", "") + "px",
+          width: logo_width.replace("px", "") + "px",
+        }}
+        format="webp"
+      />
+    ) : logo_text ? (
+      logo_text
+    ) : (
+      title
+    )
+  }
+</a>

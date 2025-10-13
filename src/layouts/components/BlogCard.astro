@@ -1,0 +1,58 @@
+---
+import dateFormat from "@/lib/utils/dateFormat";
+import { plainify } from "@/lib/utils/textConverter";
+import ImageMod from "./ImageMod.astro";
+const { data, hideContent = false } = Astro.props;
+const { title, image, description, date } = data.data;
+---
+
+<div
+  class="bg-body rounded-lg overflow-hidden h-full group"
+  style="box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05), 0 2px 30px rgba(0, 0, 0, 0.05);"
+>
+  {
+    image && (
+      <div class="overflow-hidden">
+        <ImageMod
+          class="w-full transition-transform duration-500 group-hover:scale-105"
+          src={image}
+          alt={title}
+          width={650}
+          height={500}
+          format="webp"
+        />
+      </div>
+    )
+  }
+  <div class={`${hideContent ? "p-6" : "py-10 px-8"}`}>
+    <ul class="mb-3">
+      {
+        date && (
+          <li class="inline-block text-xs text-text-light font-medium">
+            {dateFormat(date)}
+          </li>
+        )
+      }
+    </ul>
+
+    <!-- <h4 class="text-lg font-primary">
+      <a href={`blog/${data.id}`} class="hover:text-secondary/80">
+        {title}
+      </a>
+    </h4> -->
+
+    <h4 class="text-lg font-primary">
+      <a class="u-underline" href={`/blog/${data.id}`}>
+        <span class="s-underline">{title}</span>
+      </a>
+    </h4>
+
+    {
+      !hideContent && (
+        <p class="line-clamp-4 text-text/80 text-sm mt-3">
+          {plainify(description)}
+        </p>
+      )
+    }
+  </div>
+</div>

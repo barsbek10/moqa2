@@ -1,0 +1,7 @@
+.btn-solid {
+  @apply bg-secondary hover:border-primary! text-white transition-colors! duration-10;
+}
+
+.btn-outline {
+  @apply bg-transparent text-text border-primary! hover:border-secondary! hover:text-white transition-colors! duration-10;
+}

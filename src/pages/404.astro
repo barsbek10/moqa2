@@ -1,0 +1,30 @@
+---
+import Base from "@/layouts/Base.astro";
+import Button from "@/shortcodes/Button";
+---
+
+<Base title="Page Not Found">
+  <section class="section-sm bg-primary/5 text-center">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="sm:col-10 md:col-8 lg:col-6">
+          <span class="text-[8rem] block font-bold text-text-dark"> 404 </span>
+          <h1 class="h2 mb-4">Page not found</h1>
+          <div class="content">
+            <p>
+              The page you are looking for might have been removed, had its name
+              changed, or is temporarily unavailable.
+            </p>
+          </div>
+
+          <Button
+            link={"/"}
+            label={"Back to home"}
+            className="w-fit mt-8"
+            variant={"solid"}
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

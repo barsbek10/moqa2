@@ -1,0 +1,122 @@
+---
+import config from "@/config/config.json";
+import Base from "@/layouts/Base.astro";
+import PageHeader from "@/partials/PageHeader.astro";
+import type { CollectionEntry } from "astro:content";
+import { getEntry } from "astro:content";
+
+const book = (await getEntry("book", "-index")) as CollectionEntry<"book">;
+
+const { contact_form_action }: { contact_form_action: string } = config.params;
+const { title, description, meta_title, image } = book.data;
+---
+
+<Base
+  title={title}
+  meta_title={meta_title}
+  description={description}
+  image={image}
+>
+  <PageHeader
+    title={title}
+    description={description}
+    backgroundColor="bg-body"
+    height="h-[300px] md:h-[360px]"
+  />
+
+  <div class="container relative z-10">
+    <div class="row">
+      <div class="mx-auto col-11 sm:col-10 lg:col-7">
+        <form
+          class="p-10 rounded-2xl bg-body"
+          action={contact_form_action}
+          method="POST"
+          style="box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05), 0 2px 30px rgba(0, 0, 0, 0.05);"
+          data-aos="fade-up-sm"
+          data-aos-delay="250"
+        >
+          <div class="row g-4 mb-6">
+            <div class="md:col-6">
+              <label for="date" class="form-label">
+                Date <span class="text-red-500">*</span>
+              </label>
+              <input
+                id="date"
+                name="date"
+                class="form-input"
+                type="date"
+                required
+              />
+            </div>
+            <div class="md:col-6">
+              <label for="time" class="form-label">
+                Time <span class="text-red-500">*</span>
+              </label>
+              <input
+                id="time"
+                name="time"
+                class="form-input"
+                type="time"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="row g-4 mb-6">
+            <div class="md:col-6">
+              <label for="name" class="form-label">
+                Name <span class="text-red-500">*</span>
+              </label>
+              <input
+                id="name"
+                name="name"
+                class="form-input"
+                type="text"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="md:col-6">
+              <label for="phone" class="form-label">
+                Phone <span class="text-red-500">*</span>
+              </label>
+              <input
+                id="phone"
+                name="phone"
+                class="form-input"
+                type="tel"
+                placeholder="xxx-xxx-xxxx"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <label for="total-person" class="form-label">
+              Total Person <span class="text-red-500">*</span>
+            </label>
+            <input
+              id="total-person"
+              name="total-person"
+              class="form-input"
+              type="number"
+              placeholder="Enter total person"
+              required
+            />
+          </div>
+          <button type="submit" class="btn w-full bg-secondary text-white">
+            Book A Table
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <iframe
+    class="w-full h-[810px] -mt-96 md:-mt-60"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47416.27917198903!2d-92.94334545729342!3d42.03208138701794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87efa530badb1481%3A0xf015a2c84b2c1be4!2sMarshalltown%2C%20IA%2050158%2C%20USA!5e0!3m2!1sen!2sbd!4v1754466434457!5m2!1sen!2sbd"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+  >
+  </iframe>
+</Base>
