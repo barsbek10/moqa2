@@ -81,15 +81,15 @@ const { hero, explore_menu, services, features, blog_section } = homepage.data;
             data-aos-delay="100"
           />
 
-          <div class="row justify-center g-4">
+          <div class="row justify-center g-4 items-stretch">
             {explore_menu.items.map((item, i: number) => (
-              <div class="col-10 md:col-6 lg:col-3">
+              <div class="col-10 md:col-6 lg:col-3 flex">
                 <div
                   data-aos="fade-up-sm"
                   data-aos-delay={100 + i * 50}
-                  class="border border-border rounded-[1.125rem] py-10 px-8 flex flex-col items-center justify-center text-center group"
+                  class="border border-border rounded-[1.125rem] py-10 px-8 flex flex-col items-center justify-between text-center group w-full"
                 >
-                  <div class="rounded-full bg-primary/5 p-6 mb-8 inline-block relative h-[88px] w-[88px] overflow-hidden">
+                  <div class="rounded-full second_background_color p-6 mb-8 inline-block relative h-[88px] w-[88px] overflow-hidden">
                     <div class="absolute inset-0 flex items-center justify-center transition-transform duration-500 group-hover:-translate-y-full">
                       <DynamicIcon
                         icon={item.icon}
@@ -182,7 +182,7 @@ const { hero, explore_menu, services, features, blog_section } = homepage.data;
   <!-- Features -->
   {
     features.enable && (
-      <section class="section bg-primary/5">
+      <section class="section second_background_color">
         <div class="container">
           <div class="row justify-center">
             <div class="max-md:col-10">
@@ -265,63 +265,67 @@ const { hero, explore_menu, services, features, blog_section } = homepage.data;
   <Testimonial />
 
   <!-- Blog Section  -->
-  <section class="section bg-primary/5 overflow-x-hidden">
-    <div class="container">
-      <div
-        class="flex justify-center items-center md:justify-between flex-wrap gap-4 mb-14"
-        data-aos="fade-up-sm"
-        data-aos-delay="100"
-      >
-        <h2
-          class="mb-0 max-md:text-center"
-          set:html={markdownify(blog_section.title)}
-        />
-        {
-          blog_section.button.enable && (
-            <Button
-              link={blog_section.button.link}
-              label={blog_section.button.label}
-              variant="solid"
-              className="btn"
-            />
-          )
-        }
-      </div>
-
-      <div class="row justify-between g-4">
+  {
+    blog_section.enable && (
+    <section class="section second_background_color overflow-x-hidden">
+      <div class="container">
         <div
-          class="col-11 sm:col-10 lg:col-6 min-h-full mx-auto"
-          data-aos="fade-right-sm"
-          data-aos-delay="150"
+          class="flex justify-center items-center md:justify-between flex-wrap gap-4 mb-14"
+          data-aos="fade-up-sm"
+          data-aos-delay="100"
         >
-          <BlogCard
-            data={sortedPosts[0]}
-            data-aos="fade-up-sm"
-            data-aos-delay="20"
+          <h2
+            class="mb-0 max-md:text-center"
+            set:html={markdownify(blog_section.title)}
           />
+          {
+            blog_section.button.enable && (
+              <Button
+                link={blog_section.button.link}
+                label={blog_section.button.label}
+                variant="solid"
+                className="btn"
+              />
+            )
+          }
         </div>
-        <div
-          class="col-11 sm:col-10 lg:col-6 h-full mx-auto"
-          data-aos="fade-left-sm"
-          data-aos-delay="150"
-        >
-          <div class="row g-4 h-full">
-            {
-              sortedPosts.slice(1, 5).map((post, i: number) => (
-                <div class="sm:col-6 h-full">
-                  <BlogCard
-                    hideContent
-                    data={post}
-                    data-aos="fade-up-sm"
-                    data-aos-delay={40 + i * 20}
-                  />
-                </div>
-              ))
-            }
+
+        <div class="row justify-between g-4">
+          <div
+            class="col-11 sm:col-10 lg:col-6 min-h-full mx-auto"
+            data-aos="fade-right-sm"
+            data-aos-delay="150"
+          >
+            <BlogCard
+              data={sortedPosts[0]}
+              data-aos="fade-up-sm"
+              data-aos-delay="20"
+            />
+          </div>
+          <div
+            class="col-11 sm:col-10 lg:col-6 h-full mx-auto"
+            data-aos="fade-left-sm"
+            data-aos-delay="150"
+          >
+            <div class="row g-4 h-full">
+              {
+                sortedPosts.slice(1, 5).map((post, i: number) => (
+                  <div class="sm:col-6 h-full">
+                    <BlogCard
+                      hideContent
+                      data={post}
+                      data-aos="fade-up-sm"
+                      data-aos-delay={40 + i * 20}
+                    />
+                  </div>
+                ))
+              }
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    )
+  }
   <!-- /Blog Section  -->
 </Base>

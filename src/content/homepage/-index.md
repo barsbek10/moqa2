@@ -1,22 +1,22 @@
 ---
 hero:
-  title: "Best food for your taste"
-  subtitle: "Discover delectable cuisine and unforgettable moments in our welcoming, culinary haven."
+  title: "Your New Brunch Ritual" 
+  subtitle: "Where cozy mornings meet rich flavors and freshly brewed coffee. At Moqa, we serve all-day breakfasts, handmade Neapolitan-style pizzas, pasta, and pastries crafted with love and care."
   buttons:
     - enable: true
-      label: "Book A Table"
-      link: "/book"
+      label: "Order Online"
+      link: "https://order.toasttab.com/online/moqa-cafe-1551-busse-road-ste-a"
     - enable: true
       label: "Explore Menu"
-      link: "/menu"
-  image: "/images/homepage/banner.png"
+      link: "menu.pdf"
+  image: "/images/homepage/moqa_banner.jpg"
 
 explore_menu:
   enable: true
   title: Browse Our Menu
   items:
-    - name: Breakfast
-      description: In the new era of technology we look in the future with certainty and pride for our life.
+    - name: All Day Breakfast
+      description: Start your day right with our signature all-day breakfast — from fluffy omelets and creamy toasts to hearty bowls and fresh pastries made each morning.
       icon: FaMugHot # icon is from `https://react-icons.github.io/react-icons/`
       button:
         enable: true
@@ -24,7 +24,7 @@ explore_menu:
         link: "/menu"
 
     - name: Main Dishes
-      description: In the new era of technology we look in the future with certainty and pride for our life.
+      description: Savor comforting flavors of handmade pasta, artisan paninis, and Neapolitan-style pizzas baked to perfection. Each plate is designed to make you feel at home.
       icon: FaBowlFood # icon is from `https://react-icons.github.io/react-icons/`
       button:
         enable: true
@@ -32,7 +32,7 @@ explore_menu:
         link: "/menu"
 
     - name: Drinks
-      description: In the new era of technology we look in the future with certainty and pride for our life.
+      description: Whether you’re a coffee lover or prefer refreshing lemonades, our drinks are crafted to match every mood — brewed, blended, and poured with passion.
       icon: FaGlassWater # icon is from `https://react-icons.github.io/react-icons/`
       button:
         enable: true
@@ -40,7 +40,7 @@ explore_menu:
         link: "/menu"
 
     - name: Desserts
-      description: In the new era of technology we look in the future with certainty and pride for our life.
+      description: Indulge in our homemade bakery selection — from croissants to rich cakes and creamy desserts that perfectly pair with your favorite coffee.
       icon: FaBurger # icon is from `https://react-icons.github.io/react-icons/`
       button:
         enable: true
@@ -49,8 +49,8 @@ explore_menu:
 
 about:
   enable: true
-  title: "We provide healthy food for your family."
-  description: "Our story began with a vision to create a unique dining experience that merges fine dining, exceptional service, and a vibrant ambiance. Rooted in city's rich culinary culture, we aim to honor our local roots while infusing a global palate.<br><br>At place, we believe that dining is not just about food, but also about the overall experience. Our staff, renowned for their warmth and dedication, strives to make every visit an unforgettable event."
+  title: "A Cozy Escape in the Heart of Elk Grove Village."
+  description: "Moqa was born from a simple idea — to create a warm and welcoming space where people can enjoy great food, aromatic coffee, and genuine moments together. Located in the heart of Elk Grove Village, our café blends modern style with homelike comfort.<br><br>Every dish is made from fresh ingredients and crafted with attention to detail — whether it’s your morning cappuccino, a creamy pasta for lunch, or pizza shared with friends.<br><br> We believe that dining is more than just eating — it’s about slowing down, connecting, and savoring life. At Moqa, every visit feels like a small celebration."
   image: "/images/homepage/about.png"
   button:
     enable: true
@@ -94,7 +94,7 @@ features:
       icon: FaCartShopping # icon is from `https://react-icons.github.io/react-icons/`
 
 blog_section:
-  enable: true
+  enable: false
   title: Our Blog & Articles
   button:
     enable: true

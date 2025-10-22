@@ -1,15 +1,15 @@
 {
   "site": {
-    "title": "Cuisine - Food & Restaurant Astro Template",
-    "base_url": "https://cuisine-astro.vercel.app",
+    "title": "Moqa",
+    "base_url": "https://moqacafe.com",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
-    "logo": "/images/logo.svg",
-    "logo_footer": "/images/logo-footer.svg",
-    "logo_width": "189",
-    "logo_height": "39",
-    "logo_text": "Cuisine"
+    "logo": "/images/LogoLight.svg",
+    "logo_footer": "/images/LogoDark.svg",
+    "logo_width": "130",
+    "logo_height": "130",
+    "logo_text": "Moqa"
   },
 
   "settings": {
@@ -26,13 +26,13 @@
   },
 
   "contact": {
-    "phone": "(123) 456 -7890",
-    "email": "info@cuisine-astro.com",
-    "address": "837 W. Marshall Lane Marshalltown, IA 50158, Los Angeles"
+    "phone": "(847) 262-5171",
+    "email": "moqacafe1551@gmail.com",
+    "address": "1551 Busse Rd, Elk Grove Village, IL 60007"
   },
 
   "navigation_button": {
-    "enable": true,
+    "enable": false,
     "label": "Get This Theme",
     "link": "https://themefisher.com/products/cuisine-astro"
   },

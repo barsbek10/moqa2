@@ -230,7 +230,7 @@ const { title, meta_title, description, image, noindex, canonical } =
             lastState = "reveal";
             header.classList.add("header-reveal");
             header.classList.add("bg-white");
-            header.classList.remove("bg-primary/5");
+            header.classList.remove("second_background_color");
           }
         } else if (currentScroll < 50) {
           // Definitely in "normal" territory
@@ -246,7 +246,7 @@ const { title, meta_title, description, image, noindex, canonical } =
               !path.includes("/page/");
 
             if (path !== "/" && !isBlogSinglePage) {
-              header.classList.add("bg-primary/5");
+              header.classList.add("second_background_color");
               header.classList.remove("bg-white");
             }
           }
@@ -265,7 +265,7 @@ const { title, meta_title, description, image, noindex, canonical } =
                 lastState = "reveal";
                 headerElement.classList.add("header-reveal");
                 headerElement.classList.add("bg-white");
-                headerElement.classList.remove("bg-primary/5");
+                headerElement.classList.remove("second_background_color");
               }
             } else {
               if (lastState !== "normal") {
@@ -280,7 +280,7 @@ const { title, meta_title, description, image, noindex, canonical } =
                   !path.includes("/page/");
 
                 if (path !== "/" && !isBlogSinglePage) {
-                  headerElement.classList.add("bg-primary/5");
+                  headerElement.classList.add("second_background_color");
                   headerElement.classList.remove("bg-white");
                 }
               }

@@ -11,7 +11,7 @@ const contact = (await getEntry(
   "-index"
 )) as CollectionEntry<"contact">;
 const { contact_form_action }: { contact_form_action: string } = config.params;
-const { title, description, meta_title, image, open_hours } = contact.data;
+const { title, description, meta_title, image, open_hours, form } = contact.data;
 ---
 
 <Base
@@ -26,6 +26,9 @@ const { title, description, meta_title, image, open_hours } = contact.data;
     <div class="container">
       <div class="row">
         <div class="mx-auto col-11 sm:col-10 lg:col-7">
+
+          {
+            form && (
           <form
             class="p-10 rounded-2xl bg-body"
             action={contact_form_action}
@@ -89,6 +92,8 @@ const { title, description, meta_title, image, open_hours } = contact.data;
               Send Message
             </button>
           </form>
+            )
+          }
 
           <!-- contact information -->
           <div class="mt-16">
@@ -131,8 +136,18 @@ const { title, description, meta_title, image, open_hours } = contact.data;
               </div>
             </div>
           </div>
+          <div class="mt-12">
+            <iframe
+              class="w-full h-[600px] md:h-[720px] mt-0"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1246.5653407521777!2d-87.95870219999998!3d42.00352157742356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fb19ba6b19c8b%3A0xc6e6763b083a364d!2sMoqa%20Cafe!5e0!3m2!1sru!2sus!4v1761114534950!5m2!1sru!2sus"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Moqa Cafe"
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
 </Base>

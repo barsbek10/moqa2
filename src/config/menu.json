@@ -13,16 +13,8 @@
       "url": "/menu"
     },
     {
-      "name": "Blog",
-      "url": "/blog"
-    },
-    {
       "name": "Contact",
       "url": "/contact"
-    },
-    {
-      "name": "Book A Table",
-      "url": "/book"
     }
   ],
   "footer": [
@@ -42,30 +34,8 @@
           "url": "/menu"
         },
         {
-          "name": "Blog",
-          "url": "/blog"
-        },
-        {
           "name": "Contact",
           "url": "/contact"
-        }
-      ]
-    },
-    {
-      "title": "Utility Pages",
-      "children": [
-        {
-          "name": "Privacy Policy",
-          "url": "/privacy-policy"
-        },
-
-        {
-          "name": "Terms & Conditions",
-          "url": "/terms-and-conditions"
-        },
-        {
-          "name": "Elements",
-          "url": "/elements"
         }
       ]
     },
