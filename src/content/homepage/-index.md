@@ -8,7 +8,7 @@ hero:
       link: "https://order.toasttab.com/online/moqa-cafe-1551-busse-road-ste-a"
     - enable: true
       label: "Explore Menu"
-      link: "menu2.pdf"
+      link: "menu.pdf"
   image: "/images/homepage/moqa_banner.jpg"
 
 explore_menu:
