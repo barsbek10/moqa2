@@ -9,7 +9,7 @@ hero:
     - enable: true
       label: "Explore Menu"
       link: "menu.pdf"
-  image: "/images/homepage/moqa_banner.jpg"
+  image: "/images/homepage/moqa_banner.png"
 
 explore_menu:
   enable: true
@@ -21,7 +21,7 @@ explore_menu:
       button:
         enable: true
         label: Explore Menu
-        link: "/menu"
+        link: "menu.pdf"
 
     - name: Main Dishes
       description: Savor comforting flavors of handmade pasta, artisan paninis, and Neapolitan-style pizzas baked to perfection. Each plate is designed to make you feel at home.
@@ -29,7 +29,7 @@ explore_menu:
       button:
         enable: true
         label: Explore Menu
-        link: "/menu"
+        link: "menu.pdf"
 
     - name: Drinks
       description: Whether you’re a coffee lover or prefer refreshing lemonades, our drinks are crafted to match every mood — brewed, blended, and poured with passion.
@@ -37,7 +37,7 @@ explore_menu:
       button:
         enable: true
         label: Explore Menu
-        link: "/menu"
+        link: "menu.pdf"
 
     - name: Desserts
       description: Indulge in our homemade bakery selection — from croissants to rich cakes and creamy desserts that perfectly pair with your favorite coffee.
@@ -45,7 +45,7 @@ explore_menu:
       button:
         enable: true
         label: Explore Menu
-        link: "/menu"
+        link: "menu.pdf"
 
 about:
   enable: true
@@ -54,8 +54,8 @@ about:
   image: "/images/homepage/about.png"
   button:
     enable: true
-    label: "Book A Table"
-    link: "/book"
+    label: "Order Online"
+    link: "https://order.toasttab.com/online/moqa-cafe-1551-busse-road-ste-a"
 
 services:
   enable: true

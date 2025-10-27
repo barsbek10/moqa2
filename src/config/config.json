@@ -5,7 +5,7 @@
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
-    "logo": "/images/LogoLight.svg",
+    "logo": "/images/Logo Light No Background.svg",
     "logo_footer": "/images/LogoDark.svg",
     "logo_width": "130",
     "logo_height": "130",
@@ -21,7 +21,7 @@
 
   "params": {
     "contact_form_action": "#",
-    "footer_text": "In the new era of technology we look a in the future with certainty and pride to for our company and.",
+    "footer_text": "Some Call It Moqa, We Call It Home",
     "copyright": "Copyright © 2025 [Themefisher](https://themefisher.com). All Rights Reserved"
   },
 

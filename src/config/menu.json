@@ -15,6 +15,10 @@
     {
       "name": "Contact",
       "url": "/contact"
+    },
+    {
+      "name": "Gallery",
+      "url": "/gallery"
     }
   ],
   "footer": [
@@ -36,6 +40,10 @@
         {
           "name": "Contact",
           "url": "/contact"
+        },
+        {
+          "name": "Gallery",
+          "url": "/gallery"
         }
       ]
     },
@@ -44,19 +52,19 @@
       "instagramImages": [
         {
           "image": "/images/instagram/1.png",
-          "url": "https://instagram.com"
+          "url": "https://www.instagram.com/moqa.cafe/"
         },
         {
           "image": "/images/instagram/2.png",
-          "url": "https://instagram.com"
+          "url": "https://www.instagram.com/moqa.cafe/"
         },
         {
           "image": "/images/instagram/3.png",
-          "url": "https://instagram.com"
+          "url": "https://www.instagram.com/moqa.cafe/"
         },
         {
           "image": "/images/instagram/4.png",
-          "url": "https://instagram.com"
+          "url": "https://www.instagram.com/moqa.cafe/"
         }
       ]
     }
