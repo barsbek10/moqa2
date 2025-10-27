@@ -81,6 +81,19 @@ const homepageCollection = defineCollection({
   }),
 });
 
+const galleryCollection = defineCollection({
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/gallery" }),
+  schema: z.object({
+    title: z.string().optional(),
+    subtitle: z.string().optional(),
+    meta_title: z.string().optional(),
+    description: z.string().optional(),
+    images: z.array(
+      z.object({ image: z.string(), description: z.string().optional(), width: z.number().optional() })
+    ),
+  }),
+})
+
 // Post collection schema
 const blogCollection = defineCollection({
   loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/blog" }),
@@ -233,4 +246,5 @@ export const collections = {
   contact: contactCollection,
   book: bookCollection,
   testimonialSection: testimonialSectionCollection,
+  gallery: galleryCollection,
 };
