@@ -58,7 +58,7 @@ about:
     link: "https://order.toasttab.com/online/moqa-cafe-1551-busse-road-ste-a"
 
 services:
-  enable: true
+  enable: false
   title: "We also offer unique <br> services for your events"
   items:
     - name: Caterings
