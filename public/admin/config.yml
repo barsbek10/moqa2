@@ -44,7 +44,23 @@ collections:
                 fields:
                   - { label: "Name", name: "name", widget: "string" }
                   - { label: "Description", name: "description", widget: "text" }
-                  - { label: "Icon (react-icons name)", name: "icon", widget: "string" }
+                  - label: "Icon"
+                    name: "icon"
+                    widget: "select"
+                    options:
+                      - FaMugHot
+                      - FaBowlFood
+                      - FaGlassWater
+                      - FaBurger
+                      - FaPizzaSlice
+                      - FaCoffee
+                      - FaUtensils
+                      - FaIceCream
+                      - FaLeaf
+                      - FaTruck
+                      - FaStar
+                      - FaHeart
+                    default: FaMugHot
                   - label: "Button"
                     name: "button"
                     widget: "object"
@@ -101,7 +117,17 @@ collections:
                 summary: "{{fields.benefit}}"
                 fields:
                   - { label: "Benefit", name: "benefit", widget: "string" }
-                  - { label: "Icon (react-icons name)", name: "icon", widget: "string" }
+                  - label: "Icon"
+                    name: "icon"
+                    widget: "select"
+                    options:
+                      - FaRegClock
+                      - FaTags
+                      - FaCartShopping
+                      - FaGift
+                      - FaBolt
+                      - FaShieldHeart
+                    default: FaRegClock
 
           - label: "Blog Section"
             name: "blog_section"
@@ -116,6 +142,7 @@ collections:
                   - { label: "Enable", name: "enable", widget: "boolean", default: true }
                   - { label: "Label", name: "label", widget: "string" }
                   - { label: "Link", name: "link", widget: "string" }
+
   - name: "about"
     label: "About Page"
     delete: false
@@ -144,7 +171,19 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
-              - { label: "Icon (react-icons name)", name: "icon", widget: "string", required: false }
+              - label: "Icon"
+                name: "icon"
+                widget: "select"
+                options:
+                  - FaLeaf
+                  - FaPizzaSlice
+                  - FaMugHot
+                  - FaBowlFood
+                  - FaTruck
+                  - FaHeart
+                  - FaStar
+                  - FaBolt
+                required: false
 
           - label: "Information"
             name: "information"
@@ -163,92 +202,106 @@ collections:
                     name: "counter"
                     widget: "object"
                     fields:
-                      - { label: "Count", name: "count", widget: "string" } # keep as string to allow "100", "3", etc.
+                      - { label: "Count", name: "count", widget: "string" }
                       - { label: "Count Suffix", name: "count_suffix", widget: "string", required: false }
                       - { label: "Count Prefix", name: "count_prefix", widget: "string", required: false }
                       - { label: "Count Duration (sec)", name: "count_duration", widget: "number", value_type: "float", min: 0, step: 0.1, default: 1 }
 
           - { label: "Draft", name: "draft", widget: "boolean", default: false }
 
-      - name: "menu"
-        label: "Menu Page"
-        delete: false
-        files:
-          - name: "menu_index"
-            label: "Menu Content"
-            file: "src/content/menu/-index.md"
-            format: "frontmatter"
+  - name: "menu"
+    label: "Menu Page"
+    delete: false
+    files:
+      - name: "menu_index"
+        label: "Menu Content"
+        file: "src/content/menu/-index.md"
+        format: "frontmatter"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Meta Title", name: "meta_title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Image", name: "image", widget: "image", required: false }
+          - { label: "Draft", name: "draft", widget: "boolean", default: false }
+
+          - label: "Foods"
+            name: "foods"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.currency}}{{fields.price}} ({{fields.group}})"
             fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Currency"
+                name: "currency"
+                widget: "select"
+                options:
+                  - "$"
+                  - "€"
+                  - "£"
+                default: "$"
+              - { label: "Price", name: "price", widget: "string" }
+              - label: "Group"
+                name: "group"
+                widget: "select"
+                options:
+                  - { label: "Breakfast", value: "breakfast" }
+                  - { label: "Snacks", value: "snaks" } # keeps your existing value
+                  - { label: "Drinks", value: "drinks" }
+                  - { label: "Pizza", value: "pizza" }
+                  - { label: "Pasta", value: "pasta" }
+                  - { label: "Bakery / Desserts", value: "desserts" }
+
+          - label: "Food Apps"
+            name: "food_apps"
+            widget: "object"
+            fields:
+              - { label: "Enable", name: "enable", widget: "boolean", default: true }
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Meta Title", name: "meta_title", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
-              - { label: "Image", name: "image", widget: "image", required: false }
-              - { label: "Draft", name: "draft", widget: "boolean", default: false }
-
-              - label: "Foods"
-                name: "foods"
-                widget: "list"
-                summary: "{{fields.name}} — {{fields.currency}}{{fields.price}} ({{fields.group}})"
-                fields:
-                  - { label: "Name", name: "name", widget: "string" }
-                  - { label: "Image", name: "image", widget: "image" }
-                  - { label: "Description", name: "description", widget: "text" }
-                  - { label: "Currency", name: "currency", widget: "string", default: "$" }
-                  - { label: "Price", name: "price", widget: "string" } # keep as string to match your content
-                  - { label: "Group", name: "group", widget: "string" } # e.g., breakfast, snaks
-
-              - label: "Food Apps"
-                name: "food_apps"
-                widget: "object"
-                fields:
-                  - { label: "Enable", name: "enable", widget: "boolean", default: true }
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Description", name: "description", widget: "text" }
-                  - label: "Images"
-                    name: "images"
-                    widget: "list"
-                    field: { label: "Image", name: "image", widget: "image" }
-
-      - name: "contact"
-        label: "Contact Page"
-        delete: false
-        files:
-          - name: "contact_index"
-            label: "Contact Content"
-            file: "src/content/contact/-index.md"
-            format: "frontmatter"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Meta Title", name: "meta_title", widget: "string", required: false }
-              - { label: "Description", name: "description", widget: "text" }
-              - { label: "Image", name: "image", widget: "image", required: false }
-              - label: "Open Hours"
-                name: "open_hours"
-                widget: "list"
-                field: { label: "Line", name: "line", widget: "string" }
-              - { label: "Draft", name: "draft", widget: "boolean", default: false }
-              - { label: "Enable Form", name: "form", widget: "boolean", default: true }
-              # Phone & Address live in src/config/config.json
-
-      - name: "gallery"
-        label: "Gallery Page"
-        delete: false
-        files:
-          - name: "gallery_index"
-            label: "Gallery Content"
-            file: "src/content/gallery/-index.md"
-            format: "frontmatter"
-            fields:
-              - { label: "Title (supports **bold**)", name: "title", widget: "markdown" }
-              - { label: "Subtitle", name: "subtitle", widget: "string" }
-              - { label: "Meta Title", name: "meta_title", widget: "string", required: false }
-              - { label: "Description", name: "description", widget: "text" }
-
               - label: "Images"
                 name: "images"
                 widget: "list"
-                summary: "{{fields.description}}"
-                fields:
-                  - { label: "Image", name: "image", widget: "image" }
-                  - { label: "Description", name: "description", widget: "string", required: false }
-                  - { label: "Width (grid cols 1–12)", name: "width", widget: "number", value_type: "int", min: 1, max: 12, default: 4 }
+                field: { label: "Image", name: "image", widget: "image" }
+
+  - name: "contact"
+    label: "Contact Page"
+    delete: false
+    files:
+      - name: "contact_index"
+        label: "Contact Content"
+        file: "src/content/contact/-index.md"
+        format: "frontmatter"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Meta Title", name: "meta_title", widget: "string", required: false }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Image", name: "image", widget: "image", required: false }
+          - label: "Open Hours"
+            name: "open_hours"
+            widget: "list"
+            field: { label: "Line", name: "line", widget: "string" }
+          - { label: "Draft", name: "draft", widget: "boolean", default: false }
+          - { label: "Enable Form", name: "form", widget: "boolean", default: true }
+
+  - name: "gallery"
+    label: "Gallery Page"
+    delete: false
+    files:
+      - name: "gallery_index"
+        label: "Gallery Content"
+        file: "src/content/gallery/-index.md"
+        format: "frontmatter"
+        fields:
+          - { label: "Title (supports **bold**)", name: "title", widget: "markdown" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Meta Title", name: "meta_title", widget: "string", required: false }
+          - { label: "Description", name: "description", widget: "text" }
+          - label: "Images"
+            name: "images"
+            widget: "list"
+            summary: "{{fields.description}}"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Description", name: "description", widget: "string", required: false }
+              - { label: "Width (grid cols 1–12)", name: "width", widget: "number", value_type: "int", min: 1, max: 12, default: 4 }
