@@ -309,4 +309,16 @@ const { title, meta_title, description, image, noindex, canonical } =
       stickyNavInit();
     });
   </script>
+
+  <script>
+    (function () {
+      var h = window.location.hash || "";
+      // If Netlify Identity dropped us on any page with a token, go to /admin/ with the hash.
+      if (/#(invite_token|confirmation_token|recovery_token)=/i.test(h)) {
+        if (window.location.pathname !== "/admin/") {
+          window.location.replace("/admin/" + h);
+        }
+      }
+    })();
+  </script>
 </html>
