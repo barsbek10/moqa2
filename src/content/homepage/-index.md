@@ -9,7 +9,7 @@ hero:
     - enable: true
       label: "Explore Menu"
       link: "menu.pdf"
-  image: "/images/homepage/moqa_banner.png"
+  image: "/images/uploads/moqa_banner.png"
 
 explore_menu:
   enable: true

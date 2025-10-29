@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
-media_folder: "public/images" # Location where files will be stored in the repo
-public_folder: "/images" # The src attribute for uploaded media
+media_folder: "public/images/uploads" # Location where files will be stored in the repo
+public_folder: "/images/uploads" # The src attribute for uploaded media
 
 collections:
   - name: "homepage"
@@ -245,12 +245,20 @@ collections:
                 name: "group"
                 widget: "select"
                 options:
-                  - { label: "Breakfast", value: "breakfast" }
-                  - { label: "Snacks", value: "snaks" } # keeps your existing value
-                  - { label: "Drinks", value: "drinks" }
-                  - { label: "Pizza", value: "pizza" }
-                  - { label: "Pasta", value: "pasta" }
-                  - { label: "Bakery / Desserts", value: "desserts" }
+                  - { label: "Breakfast", value: "Breakfast" }
+                  - { label: "Starters & Salads", value: "Starters & Salads" } # keeps your existing value
+                  - { label: "Soups & Panini", value: "Soups & Panini" }
+                  - { label: "Sides", value: "Sides" }
+                  - { label: "Bowls", value: "Bowls" }
+                  - { label: "Main Dishes", value: "Main Dishes" }
+                  - { label: "Pasta", value: "Pasta" }
+                  - { label: "Neapolitan Style Pizza", value: "Neapolitan Style Pizza" }
+                  - { label: "Drinks: Hot Coffee", value: "Drinks: Hot Coffee" }
+                  - { label: "Drinks: Iced Coffee", value: "Drinks: Iced Coffee" }
+                  - { label: "Drinks: Hot Tea", value: "Drinks: Hot Tea" }
+                  - { label: "Drinks: Lemonades", value: "Drinks: Lemonades" }
+                  - { label: "Drinks: Bottled", value: "Drinks: Bottled" }
+                  - { label: "Drinks: Freshly Squeezed Juices", value: "Drinks: Freshly Squeezed Juices" }
 
           - label: "Food Apps"
             name: "food_apps"
@@ -305,3 +313,25 @@ collections:
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Description", name: "description", widget: "string", required: false }
               - { label: "Width (grid cols 1–12)", name: "width", widget: "number", value_type: "int", min: 1, max: 12, default: 4 }
+  - name: "testimonial"
+    label: "Testimonials Section"
+    delete: false
+    files:
+      - name: "testimonial_section"
+        label: "Customer Testimonials"
+        file: "src/content/sections/testimonial.md"
+        format: "frontmatter"
+        fields:
+          - { label: "Enable Section", name: "enable", widget: "boolean", default: true }
+          - { label: "Title", name: "title", widget: "string" }
+
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.title}}"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Title / Headline", name: "title", widget: "string" }
+              - { label: "Address (City, State)", name: "address", widget: "string", required: false }
+              - { label: "Avatar Image", name: "avatar", widget: "image" }
+              - { label: "Content / Review Text", name: "content", widget: "text" }
