@@ -16,6 +16,7 @@ explore_menu:
   title: Browse Our Menu
   items:
     - name: All Day Breakfast
+      image: /images/homepage/s1.png
       description: Start your day right with our signature all-day breakfast — from fluffy omelets and creamy toasts to hearty bowls and fresh pastries made each morning.
       icon: FaMugHot # icon is from `https://react-icons.github.io/react-icons/`
       button:
@@ -24,6 +25,7 @@ explore_menu:
         link: "menu.pdf"
 
     - name: Main Dishes
+      image: /images/homepage/s2.png
       description: Savor comforting flavors of handmade pasta, artisan paninis, and Neapolitan-style pizzas baked to perfection. Each plate is designed to make you feel at home.
       icon: FaBowlFood # icon is from `https://react-icons.github.io/react-icons/`
       button:
@@ -32,6 +34,7 @@ explore_menu:
         link: "menu.pdf"
 
     - name: Drinks
+      image: /images/homepage/s3.png
       description: Whether you’re a coffee lover or prefer refreshing lemonades, our drinks are crafted to match every mood — brewed, blended, and poured with passion.
       icon: FaGlassWater # icon is from `https://react-icons.github.io/react-icons/`
       button:
@@ -40,6 +43,7 @@ explore_menu:
         link: "menu.pdf"
 
     - name: Desserts
+      image: /images/homepage/s4.png
       description: Indulge in our homemade bakery selection — from croissants to rich cakes and creamy desserts that perfectly pair with your favorite coffee.
       icon: FaBurger # icon is from `https://react-icons.github.io/react-icons/`
       button:

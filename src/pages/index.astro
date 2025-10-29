@@ -87,39 +87,36 @@ const { hero, explore_menu, services, features, blog_section } = homepage.data;
                 <div
                   data-aos="fade-up-sm"
                   data-aos-delay={100 + i * 50}
-                  class="border border-border rounded-[1.125rem] py-10 px-8 flex flex-col items-center justify-between text-center group w-full"
+                  class="border border-border rounded-[1.125rem] flex flex-col items-center justify-between text-center group w-full"
                 >
-                  <div class="rounded-full second_background_color p-6 mb-8 inline-block relative h-[88px] w-[88px] overflow-hidden">
-                    <div class="absolute inset-0 flex items-center justify-center transition-transform duration-500 group-hover:-translate-y-full">
-                      <DynamicIcon
-                        icon={item.icon}
-                        className="text-4xl text-primary"
-                      />
-                    </div>
-                    <div class="absolute inset-0 flex items-center justify-center translate-y-full transition-transform duration-300 group-hover:translate-y-0">
-                      <DynamicIcon
-                        icon={item.icon}
-                        className="text-4xl text-primary"
-                      />
-                    </div>
+                  <div class="overflow-hidden rounded-xl mb-3">
+                    <ImageMod
+                      src={item.image}
+                      alt={item.name}
+                      width={350}
+                      height={400}
+                      class="w-full h-[320px] object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                    />
                   </div>
-                  <h3
-                    class="h6 font-semibold font-primary mb-4"
-                    set:html={markdownify(item.name)}
-                  />
-                  <p
-                    class="text-text/90 mb-9 text-sm"
-                    set:html={markdownify(item.description)}
-                  />
+                  <div class="py-10 px-8" >
+                    <h3
+                      class="h6 font-semibold font-primary mb-4"
+                      set:html={markdownify(item.name)}
+                    />
+                    <p
+                      class="text-text/90 mb-9 text-sm"
+                      set:html={markdownify(item.description)}
+                    />
 
-                  {item.button?.enable && (
-                    <a
-                      href={item.button.link}
-                      class="text-secondary text-sm font-semibold hover:underline"
-                    >
-                      {item.button.label}
-                    </a>
-                  )}
+                    {item.button?.enable && (
+                      <a
+                        href={item.button.link}
+                        class="text-secondary text-sm font-semibold hover:underline"
+                      >
+                        {item.button.label}
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             ))}

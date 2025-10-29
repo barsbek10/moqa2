@@ -44,23 +44,7 @@ collections:
                 fields:
                   - { label: "Name", name: "name", widget: "string" }
                   - { label: "Description", name: "description", widget: "text" }
-                  - label: "Icon"
-                    name: "icon"
-                    widget: "select"
-                    options:
-                      - FaMugHot
-                      - FaBowlFood
-                      - FaGlassWater
-                      - FaBurger
-                      - FaPizzaSlice
-                      - FaCoffee
-                      - FaUtensils
-                      - FaIceCream
-                      - FaLeaf
-                      - FaTruck
-                      - FaStar
-                      - FaHeart
-                    default: FaMugHot
+                  - { label: "Image", name: "image", widget: "image" }
                   - label: "Button"
                     name: "button"
                     widget: "object"

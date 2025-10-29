@@ -25,6 +25,7 @@ const homepageCollection = defineCollection({
       items: z.array(
         z.object({
           name: z.string(),
+          image: z.string(),
           description: z.string(),
           icon: z.string(),
           button: z.object({
