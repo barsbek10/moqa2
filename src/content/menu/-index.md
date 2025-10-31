@@ -53,7 +53,7 @@ foods:
     description: Made with eggs, lettuce, salt, oil and other ingredients.
     currency: $
     price: "5.99"
-    group: '"drinks: hot tea"'
+    group: drinks - hot tea
 food_apps:
   enable: true
   title: You can order through apps

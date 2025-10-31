@@ -237,12 +237,12 @@ collections:
                   - { label: "Main Dishes", value: "main dishes" }
                   - { label: "Pasta", value: "pasta" }
                   - { label: "Neapolitan Style Pizza", value: "neapolitan style pizza" }
-                  - { label: "Drinks: Hot Coffee", value: "\"drinks: hot coffee\"" }
-                  - { label: "Drinks: Iced Coffee", value: "\"drinks: iced coffee\"" }
-                  - { label: "Drinks: Hot Tea", value: "\"drinks: hot tea\"" }
-                  - { label: "Drinks: Lemonades", value: "\"drinks: lemonades\"" }
-                  - { label: "Drinks: Bottled", value: "\"drinks: bottled\"" }
-                  - { label: "Drinks: Freshly Squeezed Juices", value: "\"drinks: freshly squeezed juices\"" }
+                  - { label: "Drinks: Hot Coffee", value: "drinks - hot coffee" }
+                  - { label: "Drinks: Iced Coffee", value: "drinks - iced coffee" }
+                  - { label: "Drinks: Hot Tea", value: "drinks - hot tea" }
+                  - { label: "Drinks: Lemonades", value: "drinks - lemonades" }
+                  - { label: "Drinks: Bottled", value: "drinks - bottled" }
+                  - { label: "Drinks: Freshly Squeezed Juices", value: "drinks - freshly squeezed juices" }
 
           - label: "Food Apps"
             name: "food_apps"
