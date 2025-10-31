@@ -229,20 +229,20 @@ collections:
                 name: "group"
                 widget: "select"
                 options:
-                  - { label: "Breakfast", value: "Breakfast" }
-                  - { label: "Starters & Salads", value: "Starters & Salads" } # keeps your existing value
-                  - { label: "Soups & Panini", value: "Soups & Panini" }
-                  - { label: "Sides", value: "Sides" }
-                  - { label: "Bowls", value: "Bowls" }
-                  - { label: "Main Dishes", value: "Main Dishes" }
-                  - { label: "Pasta", value: "Pasta" }
-                  - { label: "Neapolitan Style Pizza", value: "Neapolitan Style Pizza" }
-                  - { label: "Drinks: Hot Coffee", value: "Drinks: Hot Coffee" }
-                  - { label: "Drinks: Iced Coffee", value: "Drinks: Iced Coffee" }
-                  - { label: "Drinks: Hot Tea", value: "Drinks: Hot Tea" }
-                  - { label: "Drinks: Lemonades", value: "Drinks: Lemonades" }
-                  - { label: "Drinks: Bottled", value: "Drinks: Bottled" }
-                  - { label: "Drinks: Freshly Squeezed Juices", value: "Drinks: Freshly Squeezed Juices" }
+                  - { label: "Breakfast", value: "breakfast" }
+                  - { label: "Starters & Salads", value: "starters & salads" } # keeps your existing value
+                  - { label: "Soups & Panini", value: "soups & panini" }
+                  - { label: "Sides", value: "sides" }
+                  - { label: "Bowls", value: "bowls" }
+                  - { label: "Main Dishes", value: "main dishes" }
+                  - { label: "Pasta", value: "pasta" }
+                  - { label: "Neapolitan Style Pizza", value: "neapolitan style pizza" }
+                  - { label: "Drinks: Hot Coffee", value: "\"drinks: hot coffee\"" }
+                  - { label: "Drinks: Iced Coffee", value: "\"drinks: iced coffee\"" }
+                  - { label: "Drinks: Hot Tea", value: "\"drinks: hot tea\"" }
+                  - { label: "Drinks: Lemonades", value: "\"drinks: lemonades\"" }
+                  - { label: "Drinks: Bottled", value: "\"drinks: bottled\"" }
+                  - { label: "Drinks: Freshly Squeezed Juices", value: "\"drinks: freshly squeezed juices\"" }
 
           - label: "Food Apps"
             name: "food_apps"

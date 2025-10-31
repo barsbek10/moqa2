@@ -96,10 +96,14 @@ const groups = [
       >
         <div class="col-10 xl:col-4">
           <h2 class="mb-4" set:html={markdownify(food_apps?.title)} />
-          <p
-            class="text-sm text-text/90 text-balance"
-            set:html={markdownify(food_apps?.description)}
-          />
+          <!--{-->
+          <!--  food_apps?.title && (-->
+          <!--    <p-->
+          <!--      class="text-sm text-text/90 text-balance"-->
+          <!--      set:html={markdownify(food_apps?.description)}-->
+          <!--    />-->
+          <!--  )-->
+          <!--}-->
         </div>
         <div class="col-11 xl:col-8">
           <div class="space-y-6 md:space-y-8 max-xl:mt-10">

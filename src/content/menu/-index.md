@@ -11,19 +11,19 @@ foods:
     description: Made with eggs, lettuce, salt, oil and other ingredients.
     currency: $
     price: "15.99"
-    group: Bowls
+    group: bowls
   - name: Chocolate Icecream
     image: /images/menu/s4.png
     description: Made with eggs, lettuce, salt, oil and other ingredients.
     currency: $
     price: "18.05"
-    group: snaks
+    group: starters & salads
   - name: Hawaiian Pizza
     image: /images/menu/b2.png
     description: Made with eggs, lettuce, salt, oil and other ingredients.
     currency: $
     price: "15.99"
-    group: breakfast
+    group: pizza
   - name: Butterscotch Cake
     image: /images/menu/b3.png
     description: Made with eggs, lettuce, salt, oil and other ingredients.
@@ -41,7 +41,7 @@ foods:
     description: Made with eggs, lettuce, salt, oil and other ingredients.
     currency: $
     price: "12.99"
-    group: snaks
+    group: "drinks: iced coffee"
   - name: Classic Waffles
     image: /images/menu/s2.png
     description: Made with eggs, lettuce, salt, oil and other ingredients.
@@ -57,16 +57,9 @@ foods:
 food_apps:
   enable: true
   title: You can order through apps
-  description: Lorem ipsum dolor sit amet consectetur adipiscing elit enim
-    bibendum sed et aliquet aliquet risus tempor semper.
+  description: Click on the app logo
   images:
-    - /images/menu/app1.svg
-    - /images/menu/app2.svg
-    - /images/menu/app3.svg
-    - /images/menu/app4.svg
-    - /images/menu/app5.svg
-    - /images/menu/app6.svg
-    - /images/menu/app7.svg
-    - /images/menu/app8.svg
-    - /images/menu/app9.svg
+    - /images/menu/uber_eats.svg
+    - /images/menu/grubhub.svg
+    - /images/menu/doordash.svg
 ---
