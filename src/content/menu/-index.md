@@ -20,30 +20,33 @@ foods:
     currency: $
     price: "10.95"
     group: starters & salads
-  - name: Hawaiian Pizza
-    image: /images/menu/b2.png
-    description: Made with eggs, lettuce, salt, oil and other ingredients.
+  - name: Mediterranean Burrata
+    image: /images/uploads/img_3122.jpeg
+    description: Tomatoes, red onion, roasted bell peppers, artichoke hearts,
+      sundried tomatoes, arugula, avocado mousse, honey mustard sauce, olive
+      oil, balsamic gel, burrata cheese.
     currency: $
-    price: "15.99"
-    group: pizza
-  - name: Butterscotch Cake
-    image: /images/menu/b3.png
-    description: Made with eggs, lettuce, salt, oil and other ingredients.
+    price: "11.95"
+    group: starters & salads
+  - name: Benedict Royale
+    image: /images/uploads/img_3113.jpeg
+    description: Egg poacher, cold smoked salmon over brioche, avocado muss.
     currency: $
-    price: "20.99"
+    price: "17.95"
     group: breakfast
-  - name: Classic Waffles Special
-    image: /images/menu/b4.png
-    description: Made with eggs, lettuce, salt, oil and other ingredients.
+  - name: "California Breakfast "
+    image: /images/uploads/img_3121.jpeg
+    description: Mozzarella, arugula, avocado mousse, scrambled eggs, croissant.
     currency: $
-    price: "15.99"
+    price: "17.95"
     group: breakfast
-  - name: Cheese Burger
-    image: /images/menu/s1.png
-    description: Made with eggs, lettuce, salt, oil and other ingredients.
+  - name: "Turkish Style Breakfast "
+    image: /images/uploads/img_9239.jpeg
+    description: 2 scrambled eggs, Turkish sausages, white cheese, mozzarella
+      cheese, salad, toast bread, honey butter, olives.
     currency: $
-    price: "12.99"
-    group: drinks - iced coffee
+    price: "14.95"
+    group: breakfast
   - name: Classic Waffles
     image: /images/menu/s2.png
     description: Made with eggs, lettuce, salt, oil and other ingredients.
