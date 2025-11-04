@@ -7,16 +7,16 @@ image: ""
 draft: false
 foods:
   - name: Asian Fusion Bowl
-    image: /images/menu/b1.png
-    description: Made with eggs, lettuce, salt, oil and other ingredients.
+    image: /images/uploads/img_3081.jpeg
+    description: Fried chicken, kimchi fried rice, salad, dressing.
     currency: $
-    price: "15.99"
+    price: "16.95"
     group: bowls
-  - name: Chocolate Icecream
-    image: /images/menu/s4.png
-    description: Made with eggs, lettuce, salt, oil and other ingredients.
+  - name: Classic Ceasar Twist
+    image: /images/uploads/img_3132.jpeg
+    description: Romaine, cherry tomatoes, parmesan, eggs, bread toast, balsamic, chicken.
     currency: $
-    price: "18.05"
+    price: "10.95"
     group: starters & salads
   - name: Hawaiian Pizza
     image: /images/menu/b2.png
@@ -53,5 +53,25 @@ foods:
     description: Made with eggs, lettuce, salt, oil and other ingredients.
     currency: $
     price: "5.99"
-    group: drinks - hot tea  
+    group: drinks - hot tea
+  - currency: $
+    name: Garden Harmony Salad
+    image: /images/uploads/img_3002.jpeg
+    description: Tomatoes, cucumber, red onion, greens, avocado mousse, zucchini,
+      honey mustard sauce, strawberries, sesame seeds.
+    price: "7.95"
+    group: starters & salads
+  - currency: $
+    name: Tuscan Caprese
+    image: /images/uploads/img_3130.jpeg
+    description: Fresh mozzarella cheese, pesto, arugula, balsamic, pine nuts,
+      cherry tomatoes, quinoa, mango sauce.
+    price: "10.95"
+    group: starters & salads
+food_apps:
+  enable: false
+  title: "DoorDash "
+  description: aaaa
+  images:
+    - /images/uploads/img_3081.jpeg
 ---
