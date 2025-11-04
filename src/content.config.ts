@@ -228,12 +228,25 @@ const menuCollection = defineCollection({
         group: z.string(),
       }),
     ),
-    food_apps: z.object({
-      enable: z.boolean(),
-      title: z.string(),
-      description: z.string(),
-      images: z.array(z.string()),
-    }),
+  }),
+});
+
+// Testimonials Section collection schema
+const foodAppsSectionCollection = defineCollection({
+  loader: glob({
+    pattern: "foodapps.{md,mdx}",
+    base: "src/content/sections",
+  }),
+  schema: z.object({
+    enable: z.boolean(),
+    title: z.string(),
+    description: z.string(),
+    images: z.array(
+      z.object({
+        location: z.string(),
+        link: z.string(),
+      }),
+    ),
   }),
 });
 
@@ -248,4 +261,5 @@ export const collections = {
   book: bookCollection,
   testimonialSection: testimonialSectionCollection,
   gallery: galleryCollection,
+  foodAppsSection: foodAppsSectionCollection,
 };

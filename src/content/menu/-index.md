@@ -53,13 +53,5 @@ foods:
     description: Made with eggs, lettuce, salt, oil and other ingredients.
     currency: $
     price: "5.99"
-    group: drinks - hot tea
-food_apps:
-  enable: true
-  title: You can order through apps
-  description: Click on the app logo
-  images:
-    - /images/menu/uber_eats.svg
-    - /images/menu/grubhub.svg
-    - /images/menu/doordash.svg
+    group: drinks - hot tea  
 ---

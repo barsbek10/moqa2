@@ -319,3 +319,23 @@ collections:
               - { label: "Address (City, State)", name: "address", widget: "string", required: false }
               - { label: "Avatar Image", name: "avatar", widget: "image" }
               - { label: "Content / Review Text", name: "content", widget: "text" }
+  - name: "foodapps"
+    label: "Food Apps Section"
+    delete: false
+    files:
+      - name: "foodapps_section"
+        label: "Order Through Apps"
+        file: "src/content/sections/foodapps.md"
+        format: "frontmatter"
+        fields:
+          - { label: "Enable Section", name: "enable", widget: "boolean", default: true }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+
+          - label: "App Logos & Links"
+            name: "images"
+            widget: "list"
+            summary: "{{fields.location}} → {{fields.link}}"
+            fields:
+              - { label: "Image Location", name: "location", widget: "image" }
+              - { label: "Link (App URL)", name: "link", widget: "string" }

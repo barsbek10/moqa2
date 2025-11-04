@@ -1,0 +1,138 @@
+---
+import { markdownify } from "@/lib/utils/textConverter";
+import ImageMod from "@/components/ImageMod.astro";
+import { getEntry, type CollectionEntry } from "astro:content";
+import { Link as LinkIcon } from "lucide-react";
+
+const foodapps = (await getEntry(
+  "foodAppsSection",
+  "foodapps"
+)) as CollectionEntry<"foodAppsSection">;
+const foodApps = foodapps.data
+---
+
+{
+  foodApps.enable && (
+    <section class="section bg-primary">
+      <div class="container">
+        <div
+          class="row items-center max-xl:justify-center max-xl:text-center g-4"
+        >
+          <div class="col-10 xl:col-4">
+            <h2 class="mb-4 text-white" set:html={markdownify(foodApps?.title)} />
+            <!--{-->
+            <!--  food_apps?.title && (-->
+            <!--    <p-->
+            <!--      class="text-sm text-text/90 text-balance"-->
+            <!--      set:html={markdownify(food_apps?.description)}-->
+            <!--    />-->
+            <!--  )-->
+            <!--}-->
+          </div>
+          <div class="col-11 xl:col-8">
+            <div class="space-y-6 md:space-y-8 max-xl:mt-10">
+              {/* First row - closer spacing */}
+              <div
+                class="flex flex-wrap justify-center items-center gap-3 md:gap-5"
+              >
+                {
+                  foodApps?.images
+                    .slice(0, 3)
+                    .map((image, i) => (
+                      <a
+                        href={image.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="relative transition-transform duration-300 hover:scale-105"
+                      >
+                        <ImageMod
+                          src={image.location}
+                          alt={`food-app-${i}`}
+                          class="rounded-lg object-cover w-[30%] sm:w-[150px] md:w-[180px] xl:w-[222px]"
+                          width={222}
+                          height={91}
+                          style="box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05), 0 2px 30px rgba(0, 0, 0, 0.05);"
+                        />
+                        <div
+                          class="absolute top-1 right-1 bg-white/70 backdrop-blur-sm rounded-full p-1 shadow-sm z-10"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="w-4 h-4 text-gray-700"
+                          >
+                            <path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                            <polyline points="15 3 21 3 21 9" />
+                            <line x1="10" y1="14" x2="21" y2="3" />
+                          </svg>
+                        </div>
+                      </a>
+                    ))
+                }
+              </div>
+
+              {/* Middle row - regular spacing */}
+              <div
+                class="flex flex-wrap justify-center items-center gap-3 md:gap-5"
+              >
+                {
+                  foodApps?.images
+                    .slice(3, 6)
+                    .map((image, i) => (
+                      <a
+                        href={image.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="transition-transform duration-300 hover:scale-105"
+                      >
+                        <ImageMod
+                          src={image.location}
+                          alt={`food-app-${i + 3}`}
+                          class="rounded-lg object-cover w-[30%] sm:w-[150px] md:w-[200px] lg:w-[255px]"
+                          width={255}
+                          height={91}
+                          style="box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05), 0 2px 30px rgba(0, 0, 0, 0.05);"
+                        />
+                      </a>
+                    ))
+                }
+              </div>
+
+              {/* Last row - closer spacing */}
+              <div
+                class="flex flex-wrap justify-center items-center gap-3 md:gap-5"
+              >
+                {
+                  foodApps?.images
+                    .slice(6, 9)
+                    .map((image, i) => (
+                      <a
+                        href={image.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="transition-transform duration-300 hover:scale-105"
+                      >
+                        <ImageMod
+                          src={image.location}
+                          alt={`food-app-${i + 6}`}
+                          class="rounded-lg object-cover w-[30%] sm:w-[150px] md:w-[180px] xl:w-[222px]"
+                          width={222}
+                          height={91}
+                          style="box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05), 0 2px 30px rgba(0, 0, 0, 0.05);"
+                        />
+                      </a>
+                    ))
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

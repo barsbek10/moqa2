@@ -4,6 +4,7 @@ import Base from "@/layouts/Base.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import type { CollectionEntry } from "astro:content";
 import { getEntry } from "astro:content";
+import Foodapps from "@/partials/Foodapps.astro";
 
 const menu = (await getEntry("menu", "-index")) as CollectionEntry<"menu">;
 const { title, description, foods, food_apps } = menu.data;
@@ -89,88 +90,8 @@ const groups = [
     </div>
   </section>
 
-  <section class="section second_background_color">
-    <div class="container">
-      <div
-        class="row items-center max-xl:justify-center max-xl:text-center g-4"
-      >
-        <div class="col-10 xl:col-4">
-          <h2 class="mb-4" set:html={markdownify(food_apps?.title)} />
-          <!--{-->
-          <!--  food_apps?.title && (-->
-          <!--    <p-->
-          <!--      class="text-sm text-text/90 text-balance"-->
-          <!--      set:html={markdownify(food_apps?.description)}-->
-          <!--    />-->
-          <!--  )-->
-          <!--}-->
-        </div>
-        <div class="col-11 xl:col-8">
-          <div class="space-y-6 md:space-y-8 max-xl:mt-10">
-            {/* First row - closer spacing */}
-            <div
-              class="flex flex-wrap justify-center items-center gap-3 md:gap-5"
-            >
-              {
-                food_apps?.images
-                  .slice(0, 3)
-                  .map((image, i) => (
-                    <ImageMod
-                      src={image}
-                      alt={`food-app-${i}`}
-                      class="rounded-lg object-cover w-[30%] sm:w-[150px] md:w-[180px] xl:w-[222px]"
-                      width={222}
-                      height={91}
-                      style="box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05), 0 2px 30px rgba(0, 0, 0, 0.05);"
-                    />
-                  ))
-              }
-            </div>
+  <Foodapps/>
 
-            {/* Middle row - regular spacing */}
-            <div
-              class="flex flex-wrap justify-center items-center gap-3 md:gap-5"
-            >
-              {
-                food_apps?.images
-                  .slice(3, 6)
-                  .map((image, i) => (
-                    <ImageMod
-                      src={image}
-                      alt={`food-app-${i + 3}`}
-                      class="rounded-lg object-cover w-[30%] sm:w-[150px] md:w-[200px] lg:w-[255px]"
-                      width={255}
-                      height={91}
-                      style="box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05), 0 2px 30px rgba(0, 0, 0, 0.05);"
-                    />
-                  ))
-              }
-            </div>
-
-            {/* Last row - closer spacing */}
-            <div
-              class="flex flex-wrap justify-center items-center gap-3 md:gap-5"
-            >
-              {
-                food_apps?.images
-                  .slice(6, 9)
-                  .map((image, i) => (
-                    <ImageMod
-                      src={image}
-                      alt={`food-app-${i + 6}`}
-                      class="rounded-lg object-cover w-[30%] sm:w-[150px] md:w-[180px] xl:w-[222px]"
-                      width={222}
-                      height={91}
-                      style="box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05), 0 2px 30px rgba(0, 0, 0, 0.05);"
-                    />
-                  ))
-              }
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 </Base>
 
 <script>
