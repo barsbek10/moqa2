@@ -39,12 +39,14 @@ const ImageGallery = ({
 
   const openImage = (img: string) => {
     setSelectedImage(img);
+    // console.log("openImage", img)
     setTimeout(() => setIsOpen(true), 10);
   };
 
   const closeImage = (e: React.MouseEvent<HTMLDivElement>) => {
     if (e.target === e.currentTarget) {
       setIsOpen(false);
+      // console.log("closeImage")
       setTimeout(() => setSelectedImage(null), 300);
     }
   };
@@ -72,12 +74,12 @@ const ImageGallery = ({
                   dangerouslySetInnerHTML={{
                     __html: markdownify(img.description),
                   }}
-                  className="bg-text/50 px-3 py-2 text-base rounded-2xl text-text-light"
+                  className="bg-text-gallery-back/50 px-3 py-2 text-base rounded-2xl text-text-gallery-photo"
                 />
               )}
-              <div className="bg-text/50 px-3 py-2 rounded-2xl ">
+              <div className="bg-text-gallery-back/50 px-3 py-2 rounded-2xl ">
                 <svg
-                  className="w-6 h-6 rotate-45 text-base text-text-light inline-block"
+                  className="w-6 h-6 rotate-45 text-base text-text-gallery-photo inline-block"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24">

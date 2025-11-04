@@ -10,7 +10,9 @@
       "text_color": {
         "text": "#444444",
         "text_dark": "#2c2f24",
-        "text_light": "#737865"
+        "text_light": "#737865",
+        "text_gallery_photo": "#FFFFFF",
+        "text_gallery_back": "#0e0d39"
       }
     }
   },

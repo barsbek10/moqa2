@@ -102,3 +102,37 @@
 .group:hover .s-underline {
   background-size: 100% 100%;
 }
+
+/* gallery image zoom animation */
+.gallery {
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .overlay.open {
+    opacity: 1;
+  }
+
+  .floating-image {
+    max-width: 90%;
+    max-height: 90%;
+    transform: scale(0.5);
+    opacity: 0;
+    transition:
+      transform 0.3s ease-in-out,
+      opacity 0.3s ease-in-out;
+  }
+
+  .floating-image.open {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
