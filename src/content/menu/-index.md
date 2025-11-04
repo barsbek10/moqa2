@@ -41,7 +41,7 @@ foods:
     description: Made with eggs, lettuce, salt, oil and other ingredients.
     currency: $
     price: "12.99"
-    group: "drinks: iced coffee"
+    group: drinks - iced coffee
   - name: Classic Waffles
     image: /images/menu/s2.png
     description: Made with eggs, lettuce, salt, oil and other ingredients.
