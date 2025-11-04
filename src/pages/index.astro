@@ -73,7 +73,7 @@ const { hero, explore_menu, services, features, blog_section } = homepage.data;
   <!-- Explore Menu  -->
   {
     explore_menu.enable && (
-      <section class="section second_background_color">
+      <section class="section ">
         <div class="container">
           <h2
             class="text-center mb-14"
@@ -88,7 +88,7 @@ const { hero, explore_menu, services, features, blog_section } = homepage.data;
                 <div
                   data-aos="fade-up-sm"
                   data-aos-delay={100 + i * 50}
-                  class="border border-border rounded-[1.125rem] flex flex-col items-center justify-between text-center group w-full"
+                  class="second_background_color border border-border rounded-[1.125rem] flex flex-col justify-between text-center group w-full"
                 >
                   <div class="overflow-hidden rounded-xl mb-3">
                     <ImageMod
@@ -99,20 +99,23 @@ const { hero, explore_menu, services, features, blog_section } = homepage.data;
                       class="w-full h-[320px] object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
                     />
                   </div>
-                  <div class="py-10 px-8" >
+
+                  <div class="py-10 px-8 flex flex-col justify-between flex-grow">
+                    {/* ✅ give h3 consistent height so titles align */}
                     <h3
-                      class="h6 font-semibold font-primary mb-4"
+                      class="h6 font-semibold font-primary mb-4 min-h-[48px] flex items-center justify-center"
                       set:html={markdownify(item.name)}
                     />
+
                     <p
-                      class="text-text/90 mb-9 text-sm"
+                      class="text-text/90 mb-9 text-sm flex-grow"
                       set:html={markdownify(item.description)}
                     />
 
                     {item.button?.enable && (
                       <a
                         href={item.button.link}
-                        class="text-secondary text-sm font-semibold hover:underline"
+                        class="text-secondary text-sm font-semibold hover:underline mt-auto"
                       >
                         {item.button.label}
                       </a>
@@ -182,7 +185,7 @@ const { hero, explore_menu, services, features, blog_section } = homepage.data;
   <!-- Features -->
   {
     features.enable && (
-      <section class="section second_background_color">
+      <section class="section bg-primary">
         <div class="container">
           <div class="row justify-center">
             <div class="max-md:col-10">
@@ -219,7 +222,7 @@ const { hero, explore_menu, services, features, blog_section } = homepage.data;
                 </div>
                 <div class="lg:w-[37%] lg:mt-10">
                   <h2
-                    class="text-h3 md:text-h2 text-balance mb-7 text-left"
+                    class="text-h3 md:text-h2 text-balance mb-7 text-left text-white"
                     data-aos="fade-up-sm"
                     data-aos-delay="50"
                     set:html={markdownify(features.title)}
@@ -228,7 +231,7 @@ const { hero, explore_menu, services, features, blog_section } = homepage.data;
                   {features.content && (
                     <p
                       set:html={markdownify(features.content)}
-                      class="mb-12 text-left text-sm text-balance"
+                      class="mb-12 text-left text-sm text-balance text-white"
                       data-aos="fade-up-sm"
                       data-aos-delay="100"
                     />
@@ -248,7 +251,7 @@ const { hero, explore_menu, services, features, blog_section } = homepage.data;
                       </span>
                       <p
                         set:html={markdownify(benefit.benefit)}
-                        class="text-text/90 font-medium text-lg"
+                        class="text-text/90 font-medium text-lg text-white"
                       />
                     </div>
                   ))}
