@@ -1,8 +1,10 @@
 ---
 title: Our Menu
 meta_title: Our Menus
-description: We consider all the drivers of change gives you the components you
-  need to change to create a truly happens.
+description: Discover our delicious all-day menu — from hearty breakfasts and
+  handmade pasta to Neapolitan pizzas, fresh salads, and desserts baked
+  in-house. At Moqa Café, every dish is made with love, fresh ingredients, and a
+  touch of creativity.
 image: ""
 draft: false
 foods:
