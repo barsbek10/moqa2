@@ -5,20 +5,16 @@ import ImageMod from "./ImageMod.astro";
 type SiteConfig = {
   logo: string;
   logo_darkmode?: string;
-  logo_width: any; // Use a specific type instead of `any` if possible
-  logo_height: any; // Use a specific type instead of `any` if possible
   logo_text: string;
   title: string;
 };
 
-const { src, srcDarkmode }: { src?: string; srcDarkmode?: string } =
+const { src, srcDarkmode, logo_width, logo_height  }: { src?: string; srcDarkmode?: string, logo_width?: string, logo_height?: string } =
   Astro.props;
 
 const {
   logo,
   logo_darkmode,
-  logo_width,
-  logo_height,
   logo_text,
   title,
 }: SiteConfig = config.site;
