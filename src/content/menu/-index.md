@@ -47,18 +47,18 @@ foods:
     currency: $
     price: "14.95"
     group: breakfast
-  - name: Classic Waffles
-    image: /images/menu/s2.png
-    description: Made with eggs, lettuce, salt, oil and other ingredients.
+  - name: Rustic Avocado Toast
+    image: /images/uploads/img_3118.jpeg
+    description: Bread or croissant, poached egg, parmesan, olive oil, arugula.
     currency: $
-    price: "13.99"
-    group: snaks
-  - name: Mint Lemonade
-    image: /images/menu/s3.png
-    description: Made with eggs, lettuce, salt, oil and other ingredients.
+    price: "13.95"
+    group: breakfast
+  - name: Veggie Omelette
+    image: /images/uploads/img_3014.jpeg
+    description: Zucchini, red onion, cherry, mushrooms, toast or hash browns.
     currency: $
-    price: "5.99"
-    group: drinks - hot tea
+    price: "17.95"
+    group: breakfast
   - currency: $
     name: Garden Harmony Salad
     image: /images/uploads/img_3002.jpeg
