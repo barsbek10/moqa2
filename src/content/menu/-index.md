@@ -73,6 +73,36 @@ foods:
       cherry tomatoes, quinoa, mango sauce.
     price: "10.95"
     group: starters & salads
+  - currency: $
+    name: Hearty Steak Bowl
+    description: Ribeye, rice, mushroom, dressing, salad.
+    price: "19.95"
+    group: bowls
+    image: /images/uploads/img_3147.jpeg
+  - currency: $
+    name: Smoked Salmon Bowl
+    description: Cold smoked salmon, rice with quinoa, salad, sauce.
+    price: "19.95"
+    group: bowls
+    image: /images/uploads/img_3145.jpeg
+  - currency: $
+    name: Asian Fusion Bowl
+    description: Fried chicken, kimchi fried rice, salad, dressing.
+    image: /images/uploads/img_3081.jpeg
+    price: "16.95"
+    group: bowls
+  - currency: $
+    name: Green Goddess Veggie Bowl
+    description: Rice, avocado, salad, green pesto, zucchini.
+    price: "15.95"
+    image: /images/uploads/img_2976.jpeg
+    group: bowls
+  - currency: $
+    name: Creamy Steak Bucatini
+    image: /images/uploads/img_3106.jpeg
+    description: Mushroom, onion, steak, pesto sauce.
+    price: "32.95"
+    group: pasta
 food_apps:
   enable: false
   title: "DoorDash "
