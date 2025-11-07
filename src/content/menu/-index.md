@@ -103,6 +103,24 @@ foods:
     description: Mushroom, onion, steak, pesto sauce.
     price: "32.95"
     group: pasta
+  - currency: $
+    name: Moqa Special Bucatini
+    description: Bell pepper, mushroom, red onion, tomato pasta, beef.
+    price: "18.95"
+    group: pasta
+    image: /images/uploads/img_3143.jpeg
+  - currency: $
+    name: Rigatoni alla Pollo
+    price: "18.95"
+    description: Chicken, cream, cherry tomatoes, pesto sauce, onion.
+    group: pasta
+    image: /images/uploads/img_3142.jpeg
+  - currency: $
+    name: Seafood Bucatini Verde
+    description: Shrimp, cream, salmon, cherry tomatoes, onion.
+    price: "22.95"
+    group: pasta
+    image: /images/uploads/img_3102.jpeg
 food_apps:
   enable: false
   title: "DoorDash "
