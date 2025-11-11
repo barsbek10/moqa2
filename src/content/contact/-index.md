@@ -5,6 +5,12 @@ description: >-
   Bring the taste of Moqa Café to your next event!
 
   We offer catering for office lunches, birthdays, and special gatherings — featuring our signature pastas, pizzas, salads, and desserts. Everything is freshly prepared and beautifully presented.
+
+
+  Contact Us
+
+
+  📧 moqacafe1551@gmail.com
 image: ""
 open_hours:
   - "Mon-Thu: 9am - 11pm"
