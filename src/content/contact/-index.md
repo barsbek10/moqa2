@@ -1,7 +1,10 @@
 ---
-title: "Contact Us"
+title: Catering
 meta_title: ""
-description: "We consider all the drivers of change gives you the components you need to change to create a truly happens."
+description: >-
+  Bring the taste of Moqa Café to your next event!
+
+  We offer catering for office lunches, birthdays, and special gatherings — featuring our signature pastas, pizzas, salads, and desserts. Everything is freshly prepared and beautifully presented.
 image: ""
 open_hours:
   - "Mon-Thu: 9am - 11pm"
@@ -9,5 +12,4 @@ open_hours:
   - "Sun: 9am - 10pm"
 draft: false
 form: true
-# Phone, Address are here `src/config/config.json`
 ---
