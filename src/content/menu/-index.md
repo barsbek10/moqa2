@@ -121,10 +121,4 @@ foods:
     price: "22.95"
     group: pasta
     image: /images/uploads/img_3102.jpeg
-food_apps:
-  enable: false
-  title: "DoorDash "
-  description: aaaa
-  images:
-    - /images/uploads/img_3081.jpeg
 ---
