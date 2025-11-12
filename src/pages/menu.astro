@@ -7,7 +7,7 @@ import { getEntry } from "astro:content";
 import Foodapps from "@/partials/Foodapps.astro";
 
 const menu = (await getEntry("menu", "-index")) as CollectionEntry<"menu">;
-const { title, description, foods, food_apps } = menu.data;
+const { title, description, default_food_image, foods } = menu.data;
 
 const groups = [
   ...new Set(foods.map((food) => food.group.toLocaleLowerCase())),
@@ -60,7 +60,7 @@ const groups = [
               >
                 <div class="border border-border rounded-xl overflow-hidden max-w-xs mx-auto">
                   <ImageMod
-                    src={item?.image}
+                    src={item?.image ?? default_food_image}
                     alt={`member-${item.name}`}
                     class="h-[230px] w-full object-cover"
                     width={400}
@@ -76,10 +76,12 @@ const groups = [
                       class="font-semibold text-lg font-primary my-4"
                       set:html={markdownify(item.name)}
                     />
-                    <p
-                      class="text-sm"
-                      set:html={markdownify(item.description)}
-                    />
+                    { item.description && (
+                      <p
+                        class="text-sm"
+                        set:html={markdownify(item.description)}
+                      />
+                    )}
                   </div>
                 </div>
               </li>

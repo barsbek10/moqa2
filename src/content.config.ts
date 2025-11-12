@@ -218,11 +218,12 @@ const menuCollection = defineCollection({
     description: z.string(),
     image: z.string().optional(),
     draft: z.boolean().optional(),
+    default_food_image: z.string(),
     foods: z.array(
       z.object({
         name: z.string(),
-        image: z.string(),
-        description: z.string(),
+        image: z.string().nullable().optional(),
+        description: z.string().nullable().optional(),
         price: z.string(),
         currency: z.string(),
         group: z.string(),

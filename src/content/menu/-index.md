@@ -7,6 +7,7 @@ description: Discover our delicious all-day menu — from hearty breakfasts and
   touch of creativity.
 image: ""
 draft: false
+default_food_image: /images/menu/coming_soon.png
 foods:
   - name: Asian Fusion Bowl
     image: /images/uploads/img_3081.jpeg
@@ -121,4 +122,10 @@ foods:
     price: "22.95"
     group: pasta
     image: /images/uploads/img_3102.jpeg
+  - currency: $
+    name: Test
+    description: 
+    price: "22.95"
+    group: pasta
+    image: 
 ---
