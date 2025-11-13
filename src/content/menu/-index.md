@@ -124,8 +124,13 @@ foods:
     image: /images/uploads/img_3102.jpeg
   - currency: $
     name: Test
-    description: 
+    description: null
     price: "22.95"
     group: pasta
-    image: 
+    image: null
+  - currency: $
+    name: Classic Margherita
+    image: /images/uploads/img_3110.jpeg
+    price: "13.95"
+    group: neapolitan style pizza
 ---
