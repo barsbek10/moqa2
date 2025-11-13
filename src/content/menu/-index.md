@@ -130,7 +130,22 @@ foods:
     image: null
   - currency: $
     name: Classic Margherita
-    image: /images/uploads/img_3110.jpeg
+    image: /images/uploads/img_3149.jpeg
+    price: "13.95"
+    group: neapolitan style pizza
+  - currency: $
+    name: Fiery Pepperoni
+    price: "15.95"
+    group: neapolitan style pizza
+    image: /images/uploads/img_3074.jpeg
+  - currency: $
+    name: Chicken & Mushroom Delight
+    price: "14.95"
+    group: neapolitan style pizza
+    image: /images/uploads/img_3109.jpeg
+  - currency: $
+    name: White & Green Pesto Pizza
+    image: /images/uploads/img_2994.jpeg
     price: "13.95"
     group: neapolitan style pizza
 ---
