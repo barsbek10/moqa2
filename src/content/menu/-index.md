@@ -123,6 +123,12 @@ foods:
     group: pasta
     image: /images/uploads/img_3102.jpeg
   - currency: $
+    name: Test
+    description: null
+    price: "22.95"
+    group: pasta
+    image: null
+  - currency: $
     name: Classic Margherita
     image: /images/uploads/img_3149.jpeg
     price: "13.95"
