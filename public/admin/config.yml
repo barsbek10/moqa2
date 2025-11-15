@@ -343,6 +343,7 @@ collections:
             widget: "list"
             summary: "{{fields.title}}"
             fields:
+              - { label: "Title", name: "title", widget: "string" }
               - label: "Instagram Images"
                 name: "instagramImages"
                 widget: "list"

@@ -47,20 +47,21 @@ const isBlogSinglePage =
           </a>
         )}
 
-        <!--{config.contact.email && (-->
-        <!--  <a-->
-        <!--    href={`mailto:${config.contact.email}`}-->
-        <!--    class="text-white/85 text-sm"-->
-        <!--  >-->
-        <!--    <DynamicIcon-->
-        <!--      icon={"FaEnvelope"}-->
-        <!--      className="mr-2.5 inline-block"-->
-        <!--    />-->
-        <!--    {social.main[0].nickname}-->
-        <!--  </a>-->
-        <!--)}-->
+        {config.contact.email && (
+          <a
+            href={`mailto:${config.contact.email}`}
+            class="text-white/85 text-sm"
+          >
+            <DynamicIcon
+              icon={"FaEnvelope"}
+              className="mr-2.5 inline-block"
+            />
+            {config.contact.email}
+          </a>
+        )}
       </div>
-      <Social source={social.main} className="social-icons" />
+
+      <Social source={social.main} className="social-icons max-md:hidden" />
     </div>
   </div>
     )
