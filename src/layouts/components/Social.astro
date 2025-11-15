@@ -1,4 +1,5 @@
 ---
+import social from "@/config/social.json";
 const { source, className } = Astro.props;
 import DynamicIcon from "@/helpers/DynamicIcon";
 
@@ -6,6 +7,7 @@ export interface ISocial {
   name: string;
   icon: string;
   link: string;
+  nickname: string;
 }
 ---
 
@@ -22,6 +24,20 @@ export interface ISocial {
           <span class="sr-only">{social.name}</span>
           <DynamicIcon className="inline-block" icon={social.icon} />
         </a>
+        <!--<a-->
+        <!--  aria-label={social.name}-->
+        <!--  href={social.link}-->
+        <!--  target={social.link.startsWith("http") ? "_blank" : "_self"}-->
+        <!--  rel="noopener noreferrer nofollow"-->
+        <!--  class="flex items-center"-->
+        <!--&gt;-->
+        <!--  <span class="sr-only">{social.name}</span>-->
+        <!--  <DynamicIcon icon={social.icon} />-->
+        <!--  <span class="mr-2 flex items-center">-->
+        <!--    <DynamicIcon icon={social.icon} />-->
+        <!--  </span>-->
+        <!--  <span>{social.nickname}</span>-->
+        <!--</a>-->
       </li>
     ))
   }

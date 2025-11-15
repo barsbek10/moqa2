@@ -34,38 +34,37 @@ const isBlogSinglePage =
 {
   /* Contact Bar */
   config.settings.contact_bar && (
-    <div class="relative z-30 w-full bg-primary py-2" data-aos="fade-down-sm">
-      <div class="container flex justify-between items-center">
-        <div class="flex gap-8 max-md:w-full max-md:justify-between">
-          {config.contact.phone && (
-            <a
-              href={`tel:${config.contact.phone}`}
-              class="text-white/85 text-sm"
-            >
-              <DynamicIcon icon={"FaPhone"} className="mr-2.5 inline-block" />
-              {config.contact.phone}
-            </a>
-          )}
+  <div class="relative z-30 w-full bg-primary py-2" data-aos="fade-down-sm">
+    <div class="container flex justify-between items-center">
+      <div class="flex gap-8 max-md:w-full max-md:justify-between">
+        {config.contact.phone && (
+          <a
+            href={`tel:${config.contact.phone}`}
+            class="text-white/85 text-sm"
+          >
+            <DynamicIcon icon={"FaPhone"} className="mr-2.5 inline-block" />
+            {config.contact.phone}
+          </a>
+        )}
 
-          {config.contact.email && (
-            <a
-              href={`mailto:${config.contact.email}`}
-              class="text-white/85 text-sm"
-            >
-              <DynamicIcon
-                icon={"FaEnvelope"}
-                className="mr-2.5 inline-block"
-              />
-              {config.contact.email}
-            </a>
-          )}
-        </div>
-
-        <Social source={social.main} className="social-icons max-md:hidden" />
+        <!--{config.contact.email && (-->
+        <!--  <a-->
+        <!--    href={`mailto:${config.contact.email}`}-->
+        <!--    class="text-white/85 text-sm"-->
+        <!--  >-->
+        <!--    <DynamicIcon-->
+        <!--      icon={"FaEnvelope"}-->
+        <!--      className="mr-2.5 inline-block"-->
+        <!--    />-->
+        <!--    {social.main[0].nickname}-->
+        <!--  </a>-->
+        <!--)}-->
       </div>
+      <Social source={social.main} className="social-icons" />
     </div>
-  )
-}
+  </div>
+    )
+  }
 
 <header
   class={`header z-20 ${config.settings.sticky_header && "sticky"} top-0 ${pathname === "/" || isBlogSinglePage ? "bg-white" : "bg-white"} w-full transition-all duration-500`}

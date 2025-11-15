@@ -327,3 +327,27 @@ collections:
             fields:
               - { label: "Image Location", name: "location", widget: "image" }
               - { label: "Link (App URL)", name: "link", widget: "string" }
+  - name: "footer"
+    label: "Instagram Images"
+    delete: false
+    files:
+      - name: "menu_json"
+        label: "Header/Footer Menus"
+        file: "src/config/menu.json"
+        format: "json"
+        fields:
+          # Footer has 2 items: Pages, and Follow Us On Instagram.
+          # You'll open the 2nd item to edit instagramImages.
+          - label: "Footer"
+            name: "footer"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - label: "Instagram Images"
+                name: "instagramImages"
+                widget: "list"
+                required: false
+                summary: "{{fields.image}}"
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Link URL", name: "url", widget: "string" }
