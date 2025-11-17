@@ -225,6 +225,29 @@ foods:
     description: Cooked salmon cubes, rice with quinoa, salad, sauce.
     price: "19.95"
     group: bowls
+  - currency: $
+    name: Crimson Beef Tofu Soup 🌶️
+    price: "12.95"
+    group: soups & panini
+  - currency: $
+    name: Tom Yam Soup 🌶️
+    price: "13.95"
+    group: soups & panini
+  - currency: $
+    name: Moqa Salad
+    description: Chicken breast, greens and sauce, eggs, mushrooms
+    price: "11.95"
+    group: starters & salads
+  - currency: $
+    name: Heatwave Beef Salad
+    description: Tender beef, pepper, spices, sauce
+    price: "12.95"
+    group: starters & salads
+  - currency: $
+    name: Aqua Garden Salad
+    description: Avocado, shrimp, seaweed, seasonings, sauce
+    price: "12.45"
+    group: starters & salads
 drinks:
   - name: Espresso
     group: Coffee
