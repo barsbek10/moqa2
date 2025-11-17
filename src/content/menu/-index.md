@@ -142,6 +142,34 @@ foods:
     image: /images/uploads/img_2994.jpeg
     price: "13.95"
     group: neapolitan style pizza
+  - currency: $
+    name: "Cheese "
+    price: "11.95"
+    group: neapolitan style pizza
+  - currency: $
+    name: "Pastrami Fe "
+    price: "15.95"
+    group: neapolitan style pizza
+  - currency: $
+    name: "Sea Breeze Pizza "
+    price: "16.95"
+    group: neapolitan style pizza
+  - currency: $
+    name: "Meaty Madness "
+    price: "17.95"
+    group: neapolitan style pizza
+  - currency: $
+    name: Ceasar Salad Pizza
+    price: "14.95"
+    group: neapolitan style pizza
+  - currency: $
+    name: "Forest Mushroom Pizza "
+    price: "14.95"
+    group: neapolitan style pizza
+  - currency: $
+    name: Burrata & Pistachio Prosciutto
+    price: "16.95"
+    group: neapolitan style pizza
 drinks:
   - name: Espresso
     group: Coffee
