@@ -12,6 +12,7 @@ import AboutSection from "@/partials/AboutSection.astro";
 import Testimonial from "@/partials/Testimonial.astro";
 import type { CollectionEntry } from "astro:content";
 import { getEntry } from "astro:content";
+import config from "@/config/config.json";
 
 const about = (await getEntry("about", "-index")) as CollectionEntry<"about">;
 const {
@@ -23,6 +24,12 @@ const {
   key_benefits,
   information,
 } = about.data;
+
+const contact = (await getEntry(
+  "contact",
+  "-index"
+)) as CollectionEntry<"contact">;
+const { open_hours } = contact.data;
 ---
 
 <Base
@@ -31,7 +38,67 @@ const {
   description={description}
   image={image}
 >
-  <AboutSection />
+  <!-- Contact Info Section  -->
+  <section class="section pt-0 second_background_color">
+    <div class="container">
+
+      <div class="row">
+        <div class="mx-auto col-11 sm:col-10 lg:col-7">
+          <!-- contact information -->
+          <div class="mt-16">
+            <div class="row g-5" data-aos="fade-up-sm" data-aos-delay="250">
+              <div class="sm:col-6 md:col-4">
+                <h6 class="font-primary font-bold text-lg mb-4">Call Us:</h6>
+                <a href={`tel:${config.contact.phone}`}>
+                  <p
+                    class="text-secondary h6 font-semibold font-primary"
+                    set:html={markdownify(config.contact.phone)}
+                  />
+                </a>
+              </div>
+              {
+                open_hours && open_hours.length > 0 && (
+                  <div class="sm:col-6 md:col-4">
+                    <h6 class="font-primary font-bold text-lg mb-4">
+                      Open Hours:
+                    </h6>
+                    <ul>
+                      {open_hours.map((hour) => (
+                        <li class="text-text-light">{hour}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )
+              }
+              <div class="sm:col-6 md:col-4">
+                <h6 class="font-primary font-bold text-lg mb-4">
+                  Our Location:
+                </h6>
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(config.contact.address)}`}
+                >
+                  <p
+                    class="text-text-light text-balance"
+                    set:html={markdownify(config.contact.address)}
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12">
+            <iframe
+              class="w-full h-[600px] md:h-[720px] mt-0"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1246.5653407521777!2d-87.95870219999998!3d42.00352157742356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fb19ba6b19c8b%3A0xc6e6763b083a364d!2sMoqa%20Cafe!5e0!3m2!1sru!2sus!4v1761114534950!5m2!1sru!2sus"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Moqa Cafe"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Info Section  -->
 
   <!-- Video Section  -->
   <!-- bg-[url(/images/about/media.png)] -->
@@ -98,6 +165,8 @@ const {
     </div>
   </section>
   <!-- /Key Benefits -->
+
+  <AboutSection />
 
   <!-- Info Section  -->
   <!--<section class="section second_background_color overflow-x-hidden">-->
