@@ -17,5 +17,5 @@ open_hours:
   - "Fri, Sat: 9am - 12am"
   - "Sun: 9am - 10pm"
 draft: false
-form: true
+form: false
 ---

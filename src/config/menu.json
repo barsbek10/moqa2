@@ -13,8 +13,8 @@
       "url": "/menu"
     },
     {
-      "name": "Contact",
-      "url": "/contact"
+      "name": "Catering",
+      "url": "/catering"
     },
     {
       "name": "Gallery",
@@ -38,8 +38,8 @@
           "url": "/menu"
         },
         {
-          "name": "Contact",
-          "url": "/contact"
+          "name": "Catering",
+          "url": "/catering"
         },
         {
           "name": "Gallery",

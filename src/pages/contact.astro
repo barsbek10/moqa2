@@ -10,7 +10,7 @@ const contact = (await getEntry(
   "contact",
   "-index"
 )) as CollectionEntry<"contact">;
-const { contact_form_action }: { contact_form_action: string } = config.params;
+// const { contact_form_action }: { contact_form_action: string } = config.params;
 const { title, description, meta_title, image, open_hours, form } = contact.data;
 ---
 
@@ -20,81 +20,23 @@ const { title, description, meta_title, image, open_hours, form } = contact.data
   description={description}
   image={image}
 >
-  <PageHeader title={title} description={description} />
-
-  <section class="section pt-0 -mt-80 md:-mt-52">
+  <!--<PageHeader title={title} description={description} />-->
+  <section class="section second_background_color">
+    <div class="row justify-center">
+      <div class="md:col-8 sm:col-10 lg:col-6 text-center capitalize">
+        <h1
+          class="mb-6 xl:text-[100px] font-normal"
+          set:html={markdownify(title)}
+        />
+        <p class="text-balance" set:html={markdownify(description)} />
+      </div>
+    </div>
+  </section>
+  <section class="section pt-0">
     <div class="container">
+
       <div class="row">
         <div class="mx-auto col-11 sm:col-10 lg:col-7">
-
-          {
-            form && (
-          <form
-            class="p-10 rounded-2xl bg-body"
-            action={contact_form_action}
-            method="POST"
-            style="box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05), 0 2px 30px rgba(0, 0, 0, 0.05);"
-            data-aos="fade-up-sm"
-            data-aos-delay="250"
-          >
-            <div class="row g-4 mb-6">
-              <div class="md:col-6">
-                <label for="name" class="form-label">
-                  Name <span class="text-red-500">*</span>
-                </label>
-                <input
-                  id="name"
-                  name="name"
-                  class="form-input"
-                  type="text"
-                  required
-                />
-              </div>
-              <div class="md:col-6">
-                <label for="email" class="form-label">
-                  Email <span class="text-red-500">*</span>
-                </label>
-                <input
-                  id="email"
-                  name="email"
-                  class="form-input"
-                  type="email"
-                  required
-                />
-              </div>
-            </div>
-
-            <div class="mb-6">
-              <label for="message" class="form-label">
-                Subject <span class="text-red-500">*</span>
-              </label>
-              <input
-                id="subject"
-                name="subject"
-                class="form-input"
-                type="text"
-                required
-              />
-            </div>
-
-            <div class="mb-6">
-              <label for="message" class="form-label">
-                Message <span class="text-red-500">*</span>
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                class="form-input"
-                rows="2"
-                required></textarea>
-            </div>
-            <button type="submit" class="btn w-full bg-secondary text-white">
-              Send Message
-            </button>
-          </form>
-            )
-          }
-
           <!-- contact information -->
           <div class="mt-16">
             <div class="row g-5" data-aos="fade-up-sm" data-aos-delay="250">
