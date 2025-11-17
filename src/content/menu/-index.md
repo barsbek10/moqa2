@@ -201,6 +201,25 @@ foods:
     description: Signature beef burger with French fries
     price: "12.95"
     group: main dishes
+  - currency: $
+    name: "Fresh green Pea Soup "
+    price: "7.95"
+    group: soups & panini
+  - currency: $
+    name: "Homestyle Chicken Soup "
+    price: "8.95"
+    group: soups & panini
+  - currency: $
+    name: Rise & Shine Plate
+    description: 3 eggs your way, salad, choice of sausage or beef bacon, choice of
+      toast / pancakes / hash browns.
+    price: "13.95"
+    group: breakfast
+  - currency: $
+    name: "Chicken Omelette "
+    description: Chicken breast, beef bacon, scrambled eggs, red onion.
+    price: "17.95"
+    group: breakfast
 drinks:
   - name: Espresso
     group: Coffee
