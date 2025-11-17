@@ -248,6 +248,39 @@ foods:
     description: Avocado, shrimp, seaweed, seasonings, sauce
     price: "12.45"
     group: starters & salads
+  - currency: $
+    name: Harbor Morning Toast
+    description: Toast, scrambled eggs, shrimps, avocado muss.
+    price: "14.95"
+    group: breakfast
+  - currency: $
+    name: Seoul Flame Beef/Chicken Bowl 🌶️
+    description: Stir fried beef/chicken, veggies, scrambled eggs on top of steamed
+      rice, pickled radish
+    price: "18.95"
+    group: bowls
+  - currency: $
+    name: Rigatoni alla Rossa
+    description: Beef, beef bacon, red sauce, parmesan, fresh basil.
+    group: pasta
+    price: "18.95"
+  - currency: $
+    name: Carbonara di Manzo
+    price: "18.95"
+    group: pasta
+    description: Beef bacon, bucatini
+  - currency: $
+    name: Garlic Parm Crunch Pizza 🌶️
+    price: "16.95"
+    group: neapolitan style pizza
+  - currency: $
+    name: Zucc & Shroom Pie
+    price: "15.45"
+    group: neapolitan style pizza
+  - currency: $
+    name: Smoked Salmon Pesto Bianca
+    price: "18.45"
+    group: neapolitan style pizza
 drinks:
   - name: Espresso
     group: Coffee
