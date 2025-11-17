@@ -223,4 +223,44 @@ drinks:
     name: Iced Espresso Tonic
     group: Iced Coffee
     price: "5.25"
+  - currency: $
+    name: Iced Matcha Latte
+    group: Iced Coffee
+    price: "5.25"
+  - currency: $
+    name: "Iced Matcha Mango "
+    group: Iced Coffee
+    price: "5.50"
+  - currency: $
+    name: "Iced Matcha Strawberry "
+    group: Iced Coffee
+    price: "5.50"
+  - currency: $
+    name: Iced Tea Classic
+    group: Iced Coffee
+    price: "5.45"
+  - currency: $
+    name: "Lychee Pineapple Tea "
+    group: Iced Coffee
+    price: "5.45"
+  - currency: $
+    name: Mint Mango Tea
+    group: Iced Coffee
+    price: "5.45"
+  - currency: $
+    name: "Mango Tea "
+    group: Hot Tea
+    price: "4.45"
+  - currency: $
+    name: "Berry Tea "
+    group: Hot Tea
+    price: "4.45"
+  - currency: $
+    name: Berry Tea
+    group: Hot Tea
+    price: "4.45"
+  - currency: $
+    name: "Peach Tea "
+    group: Hot Tea
+    price: "4.45"
 ---
