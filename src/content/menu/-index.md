@@ -145,30 +145,82 @@ foods:
 drinks:
   - name: Espresso
     group: Coffee
-    price: "3.5"
-    currency: "$"
+    price: "2.95"
+    currency: $
   - name: Latte
     group: Coffee
-    price: "4.5"
-    currency: "$"
-  - name: Classic Lemonade
+    price: "4.50"
+    currency: $
+  - name: "Cherry Strawberry "
     group: Lemonades
-    price: "4"
-    currency: "$"
-  - name: Strawberry Lemonade
+    price: "5.95"
+    currency: $
+  - name: "Moqa Guava Sky "
     group: Lemonades
-    price: "4.5"
-    currency: "$"
-  - name: Mango Lemonade
+    price: "5.95"
+    currency: $
+  - name: "Basil Peach "
     group: Lemonades
-    price: "4.5"
-    currency: "$"
-  - name: Black Tea
-    group: Tea
-    price: "3"
-    currency: "$"
+    price: "5.95"
+    currency: $
+  - name: "Black Tea Earl Grey "
+    group: Hot Tea
+    price: "2.45"
+    currency: $
   - name: Green Tea
-    group: Tea
-    price: "3.5"
-    currency: "$"
+    group: Hot Tea
+    price: "2.45"
+    currency: $
+  - currency: $
+    name: "Americano "
+    group: Coffee
+    price: "3.50"
+  - currency: $
+    name: "Cappucino "
+    group: Coffee
+    price: "4.25"
+  - currency: $
+    name: "Honey Cappucino "
+    group: Coffee
+    price: "4.75"
+  - currency: $
+    name: Moqa Vanilla
+    group: Coffee
+    price: "5.25"
+  - currency: $
+    name: "Moqa Tiramisu "
+    group: Coffee
+    price: "5.25"
+  - currency: $
+    name: Caffe Mocha (white, dark, caramel)
+    group: Coffee
+    price: "5.25"
+  - currency: $
+    name: "Chai Tea Latte "
+    group: Coffee
+    price: "4.75"
+  - currency: $
+    name: Matcha Latte
+    group: Coffee
+    price: "5.25"
+  - currency: $
+    name: "Iced Cappucino "
+    group: Iced Coffee
+    price: "4.50 "
+  - currency: $
+    name: "Iced Latte "
+    group: Iced Coffee
+    price: "4.50"
+  - currency: $
+    name: Iced Americano
+    group: Iced Coffee
+    price: "3.75"
+  - currency: $
+    name: "Iced Caramel Mocha "
+    group: Iced Coffee
+    price: "5.25"
+  - currency: $
+    name: Iced Espresso Tonic
+    group: Iced Coffee
+    price: "5.25"
 ---
