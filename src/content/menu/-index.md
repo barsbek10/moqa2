@@ -170,6 +170,22 @@ foods:
     name: Burrata & Pistachio Prosciutto
     price: "16.95"
     group: neapolitan style pizza
+  - currency: $
+    name: "Beef Pesto Panini "
+    price: "13.95"
+    group: soups & panini
+    description: Romaine, pastrami, caramelized onion, tomatoes, pesto sauce,
+      american cheese.
+  - currency: $
+    name: "Smoked Salmon Panini "
+    description: Cold smoked salmon, arugula, onion, sauce.
+    price: "13.95"
+    group: soups & panini
+  - currency: $
+    name: "Mediterranean Chicken Panini "
+    description: Chicken breast, greens, caramelized onion, tomato, sauce.
+    price: "12.95"
+    group: soups & panini
 drinks:
   - name: Espresso
     group: Coffee
