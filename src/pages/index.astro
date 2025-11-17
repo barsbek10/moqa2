@@ -100,15 +100,15 @@ const { hero, explore_menu, services, features, blog_section } = homepage.data;
                     />
                   </div>
 
-                  <div class="py-10 px-8 flex flex-col justify-between flex-grow">
+                  <div class="py-6 px-8 flex flex-col justify-between flex-grow">
                     {/* ✅ give h3 consistent height so titles align */}
                     <h3
-                      class="h6 font-semibold font-primary mb-4 min-h-[48px] flex items-center justify-center"
+                      class="h6 font-semibold font-primary mb-3 min-h-[48px] flex items-center justify-center"
                       set:html={markdownify(item.name)}
                     />
 
                     <p
-                      class="text-text/90 mb-9 text-sm flex-grow"
+                      class="text-text/90 mb-7 text-sm flex-grow"
                       set:html={markdownify(item.description)}
                     />
 
