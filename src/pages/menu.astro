@@ -7,10 +7,14 @@ import { getEntry } from "astro:content";
 import Foodapps from "@/partials/Foodapps.astro";
 
 const menu = (await getEntry("menu", "-index")) as CollectionEntry<"menu">;
-const { title, description, default_food_image, foods } = menu.data;
+const { title, description, default_food_image, foods, drinks = [] } = menu.data;
 
 const groups = [
   ...new Set(foods.map((food) => food.group.toLocaleLowerCase())),
+];
+
+const drinkGroups = [
+  ...new Set(drinks.map((drink) => drink.group.toLocaleLowerCase())),
 ];
 ---
 
@@ -27,7 +31,9 @@ const groups = [
         </div>
       </div>
 
-      <!-- shuffle menus section  -->
+
+
+      <!-- shuffle menus section -->
       <div class="mt-6">
         <ul
           class="shuffle-filter flex flex-wrap gap-4 justify-center items-center bg-body p-2 lg:py-1 mb-14 rounded-full second_background_color"
@@ -35,6 +41,19 @@ const groups = [
           <li class="btn bg-secondary text-white py-2" data-target="all">
             All
           </li>
+
+          <!-- Drinks button -->
+          {
+            drinks.length > 0 && (
+              <li
+                data-target="drinks"
+                class="btn py-2 hover:bg-secondary hover:text-white transition-all duration-300"
+              >
+                Drinks
+              </li>
+            )
+          }
+
           {
             groups.map((group) => (
               <li
@@ -47,7 +66,58 @@ const groups = [
           }
         </ul>
 
+        <!-- drinks block (hidden by default, shown only when Drinks is active) -->
+        {
+          drinks.length > 0 && (
+            <div id="drinks-block" class="mt-10 hidden">
+              <div
+                class="border border-border rounded-[1.125rem] bg-body p-6 md:p-10 max-w-4xl mx-auto"
+              >
+                <h2 class="text-center mb-8 font-primary text-2xl md:text-3xl">
+                  Drinks
+                </h2>
+
+                <div class="grid gap-6 md:grid-cols-2">
+                  {
+                    drinkGroups.map((groupKey) => {
+                      const groupItems = drinks.filter(
+                        (drink) =>
+                          drink.group.toLocaleLowerCase() === groupKey
+                      );
+
+                      const groupLabel = groupItems[0]?.group ?? groupKey;
+
+                      return (
+                        <div>
+                          <h3 class="uppercase tracking-[0.2em] text-xs text-secondary mb-4">
+                            {groupLabel}
+                          </h3>
+                          <ul class="space-y-3">
+                            {
+                              groupItems.map((drink) => (
+                                <li class="flex items-baseline justify-between gap-4 border-b border-border/60 pb-2">
+                                <span class="font-medium">
+                                  {drink.name}
+                                </span>
+                                  <span class="font-semibold text-secondary">
+                                  {drink.currency}{drink.price}
+                                </span>
+                                </li>
+                              ))
+                            }
+                          </ul>
+                        </div>
+                      );
+                    })
+                  }
+                </div>
+              </div>
+            </div>
+          )
+        }
+
         <ul
+          id="foods-grid"
           class="row justify-center gy-5 gx-4 shuffle-container mx-auto w-full items-stretch"
         >
           {
@@ -91,14 +161,16 @@ const groups = [
   </section>
 
   <Foodapps/>
-
 </Base>
-
 <script>
   document.addEventListener("astro:page-load", () => {
-    const container = document.querySelector(".shuffle-container");
+    const container = document.querySelector(".shuffle-container"); // foods grid
+    if (!container) return;
+
     const items = container.querySelectorAll("li");
     const filterButtons = document.querySelectorAll(".shuffle-filter li");
+    const drinksBlock = document.querySelector("#drinks-block");
+    const foodsGrid = document.querySelector("#foods-grid");
 
     filterButtons.forEach((btn) => {
       btn.addEventListener("click", function (e) {
@@ -116,6 +188,17 @@ const groups = [
 
         const keyword = this.getAttribute("data-target");
 
+        // Special case: Drinks
+        if (keyword === "drinks") {
+          if (foodsGrid) foodsGrid.classList.add("hidden");
+          if (drinksBlock) drinksBlock.classList.remove("hidden");
+          return;
+        } else {
+          if (foodsGrid) foodsGrid.classList.remove("hidden");
+          if (drinksBlock) drinksBlock && drinksBlock.classList.add("hidden");
+        }
+
+        // Normal filtering for foods
         items.forEach((item) => {
           const groups = JSON.parse(item.getAttribute("data-groups") || "[]");
 
@@ -127,5 +210,10 @@ const groups = [
         });
       });
     });
+
+    // Make sure drinks block is hidden initially
+    if (drinksBlock) {
+      drinksBlock.classList.add("hidden");
+    }
   });
 </script>

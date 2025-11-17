@@ -142,4 +142,33 @@ foods:
     image: /images/uploads/img_2994.jpeg
     price: "13.95"
     group: neapolitan style pizza
+drinks:
+  - name: Espresso
+    group: Coffee
+    price: "3.5"
+    currency: "$"
+  - name: Latte
+    group: Coffee
+    price: "4.5"
+    currency: "$"
+  - name: Classic Lemonade
+    group: Lemonades
+    price: "4"
+    currency: "$"
+  - name: Strawberry Lemonade
+    group: Lemonades
+    price: "4.5"
+    currency: "$"
+  - name: Mango Lemonade
+    group: Lemonades
+    price: "4.5"
+    currency: "$"
+  - name: Black Tea
+    group: Tea
+    price: "3"
+    currency: "$"
+  - name: Green Tea
+    group: Tea
+    price: "3.5"
+    currency: "$"
 ---

@@ -171,6 +171,7 @@ const contactCollection = defineCollection({
     description: z.string().optional(),
     image: z.string().optional(),
     open_hours: z.array(z.string()).optional(),
+    form: z.boolean().optional(),
     draft: z.boolean().optional(),
   }),
 });
@@ -227,6 +228,15 @@ const menuCollection = defineCollection({
         price: z.string(),
         currency: z.string(),
         group: z.string(),
+      }),
+    ),
+    drinks: z.array(
+      z.object({
+        name: z.string(),
+        price: z.string(),
+        currency: z.string(),
+        group: z.string(),              // e.g. "Coffee", "Lemonades"
+        description: z.string().nullable().optional(), // if you ever want a short note
       }),
     ),
   }),
