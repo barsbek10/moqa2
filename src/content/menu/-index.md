@@ -186,6 +186,21 @@ foods:
     description: Chicken breast, greens, caramelized onion, tomato, sauce.
     price: "12.95"
     group: soups & panini
+  - currency: $
+    name: "Premium Ribeye Steak "
+    description: Baby potatoes, salad, sauce.
+    price: "34.95"
+    group: main dishes
+  - currency: $
+    name: Grilled Salmon
+    description: Grilled salmon, quinoa, sauce, salad.
+    price: "25.95"
+    group: main dishes
+  - currency: $
+    name: "Moqa Burger "
+    description: Signature beef burger with French fries
+    price: "12.95"
+    group: main dishes
 drinks:
   - name: Espresso
     group: Coffee
