@@ -68,7 +68,7 @@ const ImageGallery = ({
               width={635}
               height={433}
             />
-            <div className="absolute -bottom-36 group-hover:bottom-3 left-1/2 transform -translate-x-1/2 duration-500 ease-in-out w-[90%] flex items-center justify-between ">
+            <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-[90%] flex items-center justify-between ">
               {img.description && (
                 <p
                   dangerouslySetInnerHTML={{
@@ -77,7 +77,8 @@ const ImageGallery = ({
                   className="bg-text-gallery-back/50 px-3 py-2 text-base rounded-2xl text-text-gallery-photo"
                 />
               )}
-              <div className="bg-text-gallery-back/50 px-3 py-2 rounded-2xl ">
+              <div className="bg-text-gallery-back/50 px-3 py-2 rounded-2xl
+                transition-all duration-300 hover:scale-110 hover:bg-text-gallery-back/70 ">
                 <svg
                   className="w-6 h-6 rotate-45 text-base text-text-gallery-photo inline-block"
                   fill="currentColor"

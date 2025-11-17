@@ -27,11 +27,11 @@ const { copyright, footer_text } = config.params;
           data-aos="fade-up-sm"
         />
 
-        <Social
-          source={social.main}
-          className="social-icons-footer"
-          data-aos="fade-up-sm"
-        />
+        <!--<Social-->
+        <!--  source={social.main}-->
+        <!--  className="social-icons-footer"-->
+        <!--  data-aos="fade-up-sm"-->
+        <!--/>-->
       </div>
 
       <div class="col-12 lg:col-8">
@@ -84,6 +84,22 @@ const { copyright, footer_text } = config.params;
                     data-aos-delay="200"
                   >
                     {item.title}
+          <!--          <div class="flex items-center gap-2" data-aos="fade-up-sm">-->
+          <!--            <Social source={social.main} className="social-icons-footer" />-->
+          <!--            &lt;!&ndash;<span class="text-sm font-medium text-gray-500 tracking-wide">{social.main[0].nickname}</span>&ndash;&gt;-->
+          <!--            &lt;!&ndash;<span class="text-sm font-semibold text-white-500">{social.main[0].nickname}</span>&ndash;&gt;-->
+          <!--            &lt;!&ndash;<span class="text-xs text-gray-400">{social.main[0].nickname}</span>&ndash;&gt;-->
+          <!--            <a-->
+          <!--              href={social.main[0].link}-->
+          <!--              target="_blank"-->
+          <!--              rel="noopener noreferrer"-->
+          <!--              class="text-sm font-semibold bg-gradient-to-r from-[#f58529] via-[#dd2a7b] to-[#8134af] bg-clip-text text-transparent tracking-wide-->
+          <!--inline-block transform transition duration-200-->
+          <!--hover:scale-105 hover:saturate-200"-->
+          <!--            >-->
+          <!--              {social.main[0].nickname}-->
+          <!--            </a>-->
+          <!--          </div>-->
                   </h6>
                   <div class="grid grid-cols-2 gap-2">
                     {item.instagramImages.map(
