@@ -220,6 +220,11 @@ foods:
     description: Chicken breast, beef bacon, scrambled eggs, red onion.
     price: "17.95"
     group: breakfast
+  - currency: $
+    name: "Salmon Bowl "
+    description: Cooked salmon cubes, rice with quinoa, salad, sauce.
+    price: "19.95"
+    group: bowls
 drinks:
   - name: Espresso
     group: Coffee
