@@ -263,4 +263,72 @@ drinks:
     name: "Peach Tea "
     group: Hot Tea
     price: "4.45"
+  - currency: $
+    name: Citrus Tea
+    group: Hot Tea
+    price: "4.45"
+  - currency: $
+    name: Grapefruit Tea
+    group: Hot Tea
+    price: "4.45"
+  - currency: $
+    name: Mojito Classic
+    group: Lemonades
+    price: "5.95"
+  - currency: $
+    name: "Mango Mojito "
+    group: Lemonades
+    price: "5.95"
+  - currency: $
+    name: "Dragon Fruit "
+    group: Lemonades
+    price: "5.95"
+  - currency: $
+    name: "Tropical "
+    group: Lemonades
+    price: "5.95"
+  - currency: $
+    name: "Ruby Sunrise "
+    group: Lemonades
+    price: "5.95"
+  - currency: $
+    name: "Orange Fresh "
+    group: Freshly Squeezed Juices
+    price: "7.45"
+  - currency: $
+    name: "Apple Fresh "
+    group: Freshly Squeezed Juices
+    price: "7.45"
+  - currency: $
+    name: "Pineapple Fresh "
+    group: Freshly Squeezed Juices
+    price: "8.25"
+  - currency: $
+    name: "Coca-Cola Can "
+    group: Bottled
+    price: "2.50"
+  - currency: $
+    name: "Coca-Cola Zero "
+    group: Bottled
+    price: "2.50"
+  - currency: $
+    name: Mexican Coca-Cola
+    group: Bottled
+    price: "3.45"
+  - currency: $
+    name: San Pelligrino (25 OZ)
+    group: Bottled
+    price: "4.95"
+  - currency: $
+    name: San Pelligrino Aranciata (11 OZ)
+    group: Bottled
+    price: "2.50"
+  - currency: $
+    name: "Apple Juice Glass "
+    group: Bottled
+    price: "1.95"
+  - currency: $
+    name: Orange Juice Glass
+    group: Bottled
+    price: "1.95"
 ---
