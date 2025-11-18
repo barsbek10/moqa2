@@ -8,7 +8,7 @@ media:
   link: https://www.youtube.com/embed/dyZcRRWiuuw?autoplay=1&mute=0
 
 key_benefits:
-  - title: Multi Cuisine
+  - title: Zabiha Halal
     description: In the new era of technology we look in the future with certainty life.
     icon: "" #Icon is from `https://react-icons.github.io/react-icons/icons/fa6/`
   - title: Easy To Order
