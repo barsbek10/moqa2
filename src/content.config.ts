@@ -233,10 +233,15 @@ const menuCollection = defineCollection({
     drinks: z.array(
       z.object({
         name: z.string(),
-        price: z.string(),
-        currency: z.string(),
-        group: z.string(),              // e.g. "Coffee", "Lemonades"
+        group: z.string(),
         description: z.string().nullable().optional(), // if you ever want a short note
+        sizes: z.array(
+          z.object({
+            label: z.string().nullable().optional(),     // e.g. "S", "M", "L", "12oz"
+            price: z.string(),     // e.g. "3.50"
+            currency: z.string(),  // e.g. "$"
+          }),
+        ),
       }),
     ),
   }),

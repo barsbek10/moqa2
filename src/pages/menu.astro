@@ -5,6 +5,7 @@ import { markdownify } from "@/lib/utils/textConverter";
 import type { CollectionEntry } from "astro:content";
 import { getEntry } from "astro:content";
 import Foodapps from "@/partials/Foodapps.astro";
+import Button from "@/shortcodes/Button.tsx";
 
 const menu = (await getEntry("menu", "-index")) as CollectionEntry<"menu">;
 const { title, description, default_food_image, foods, drinks = [] } = menu.data;
@@ -28,6 +29,16 @@ const drinkGroups = [
             set:html={markdownify(title)}
           />
           <p class="text-balance" set:html={markdownify(description)} />
+        </div>
+        <div class="text-center pt-3">
+          <p class="text-balance font-bold pb-2">
+            Check out our most up-to-date and full menu in pdf
+          </p>
+          <Button
+            link="menuV3.pdf"
+            label="Menu.pdf"
+            className="w-fit bg-primary hover:border-primary! text-white transition-colors! duration-10 hover:text-text-gallery-back"
+          />
         </div>
       </div>
 
@@ -89,19 +100,42 @@ const drinkGroups = [
 
                       return (
                         <div>
-                          <h3 class="uppercase tracking-[0.2em] text-xs text-secondary mb-4">
+                          <h3 class="uppercase tracking-[0.2em] text-sm text-secondary font-bold mb-4">
                             {groupLabel}
                           </h3>
                           <ul class="space-y-3">
                             {
                               groupItems.map((drink) => (
-                                <li class="flex items-baseline justify-between gap-4 border-b border-border/60 pb-2">
-                                <span class="font-medium">
-                                  {drink.name}
-                                </span>
-                                  <span class="font-semibold text-secondary">
-                                  {drink.currency}{drink.price}
-                                </span>
+                                <li class="border-b border-border/60 pb-2">
+                                  <div class="flex justify-between items-baseline gap-4 flex-wrap">
+                                    <span class="font-medium">
+                                      {drink.name}
+                                    </span>
+                                    <div class="flex flex-wrap gap-x-4 gap-y-1 text-sm justify-end">
+                                      {
+                                        drink.sizes?.map((size) => (
+                                          <span class="flex items-baseline gap-1">
+                                          {
+                                            size.label && (
+                                              <span class="uppercase tracking-wide font-bold">
+                                                {size.label}
+                                              </span>
+                                            )
+                                          }
+                                          <span class="font-semibold text-secondary">
+                                            {size.currency}{size.price}
+                                          </span>
+                                        </span>
+                                        ))
+                                      }
+                                    </div>
+                                  </div>
+
+                                  {drink.description && (
+                                    <p class="mt-1 text-xs opacity-80">
+                                      {drink.description}
+                                    </p>
+                                  )}
                                 </li>
                               ))
                             }

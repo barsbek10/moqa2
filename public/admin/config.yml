@@ -243,15 +243,19 @@ collections:
                   - { label: "Drinks: Lemonades", value: "drinks - lemonades" }
                   - { label: "Drinks: Bottled", value: "drinks - bottled" }
                   - { label: "Drinks: Freshly Squeezed Juices", value: "drinks - freshly squeezed juices" }
+                allow_add: true
+
           - label: "Drinks"
             name: "drinks"
             widget: "list"
-            summary: "{{fields.name}} — {{fields.currency}}{{fields.price}} ({{fields.group}})"
+            summary: "{{fields.name}} ({{fields.group}})"
             fields:
               - { label: "Name", name: "name", widget: "string" }
+
               - label: "Group"
                 name: "group"
                 widget: "select"
+                allow_add: true
                 options:
                   - { label: "Coffee", value: "Coffee" }
                   - { label: "Iced Coffee", value: "Iced Coffee" }
@@ -259,16 +263,25 @@ collections:
                   - { label: "Lemonades", value: "Lemonades" }
                   - { label: "Bottled", value: "Bottled" }
                   - { label: "Freshly Squeezed Juices", value: "Freshly Squeezed Juices" }
-                allow_add: true
-              - label: "Currency"
-                name: "currency"
-                widget: "select"
-                options: [ "$", "€", "£" ]
-                default: "$"
-              - { label: "Price", name: "price", widget: "string" }
-              # Optional image/description in case you want them later
-              # - { label: "Image", name: "image", widget: "image", required: false }
-              # - { label: "Description", name: "description", widget: "text", required: false }
+
+              # NEW — sizes array (S / L / XL etc.)
+              - label: "Sizes"
+                name: "sizes"
+                widget: "list"
+                summary: "{{fields.label}} — {{fields.currency}}{{fields.price}}"
+                fields:
+                  - label: "Label (S, M, L...)"
+                    name: "label"
+                    widget: "select"
+                    options: [ "S", "L" ]
+                    allow_add: true
+                    required: false
+                  - { label: "Price", name: "price", widget: "string" }
+                  - label: "Currency"
+                    name: "currency"
+                    widget: "select"
+                    options: [ "$", "€", "£" ]
+                    default: "$"
 
 
   - name: "contact"

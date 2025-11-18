@@ -30,7 +30,7 @@ const Button = ({
     ? "bg-secondary"
     : variant === "solid"
       ? "bg-primary"
-      : "bg-text"
+      : "bg-white"
     }`;
 
   return (
