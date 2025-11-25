@@ -10,7 +10,7 @@ hero:
       link: https://order.toasttab.com/online/moqa-cafe-1551-busse-road-ste-a
     - enable: true
       label: Explore Menu
-      link: "/menu"
+      link: /menu
   image: /images/uploads/moqa_banner.png
 explore_menu:
   enable: true
@@ -25,7 +25,7 @@ explore_menu:
       button:
         enable: true
         label: Explore Menu
-        link: "/menu"
+        link: /menu
     - name: Main Dishes
       image: /images/uploads/img_3110.jpeg
       description: Savor comforting flavors of handmade pasta, artisan paninis, and
@@ -35,7 +35,7 @@ explore_menu:
       button:
         enable: true
         label: Explore Menu
-        link: "/menu"
+        link: /menu
     - name: Drinks
       image: /images/uploads/img_3009.jpeg
       description: Whether you’re a coffee lover or prefer refreshing lemonades, our
@@ -45,7 +45,7 @@ explore_menu:
       button:
         enable: true
         label: Explore Menu
-        link: "/menu"
+        link: /menu
     - name: Desserts
       image: /images/uploads/img_9974.jpeg
       description: Indulge in our homemade bakery selection — from croissants to rich
@@ -54,7 +54,7 @@ explore_menu:
       button:
         enable: true
         label: Explore Menu
-        link: "/menu"
+        link: /menu
 about:
   enable: true
   title: A Cozy Escape in the Heart of Elk Grove Village.
@@ -94,9 +94,12 @@ services:
       image: /images/homepage/s4.png
 features:
   enable: true
-  title: Fastest Food Delivery in City
-  content: Our visual designer lets you quickly and of drag a down your way to
-    customapps for both keep desktop.
+  title: Fresh, Fast Delivery from Moqa
+  content: >-
+    Enjoy your favorite brunch, pasta, pizza, and coffee delivered hot and fresh
+    to your door in Elk Grove Village.
+
+    Quality you love — now just a tap away.
   images:
     - /images/uploads/img_3149.jpeg
     - /images/uploads/img_3102.jpeg
