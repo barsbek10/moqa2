@@ -172,6 +172,7 @@ foods:
     name: Burrata & Pistachio Prosciutto
     price: "16.95"
     group: neapolitan style pizza
+    image: /images/uploads/img_3423.jpeg
   - currency: $
     name: "Beef Pesto Panini "
     price: "13.95"
