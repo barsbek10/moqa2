@@ -255,6 +255,7 @@ foods:
     description: Avocado, shrimp, seaweed, seasonings, sauce
     price: "12.45"
     group: starters & salads
+    image: /images/uploads/img_3420.jpeg
   - currency: $
     name: Harbor Morning Toast
     description: Toast, scrambled eggs, shrimps, avocado muss.
