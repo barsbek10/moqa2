@@ -289,10 +289,12 @@ foods:
     name: Zucc & Shroom Pie
     price: "15.45"
     group: neapolitan style pizza
+    image: /images/uploads/img_3409.jpeg
   - currency: $
     name: Smoked Salmon Pesto Bianca
     price: "18.45"
     group: neapolitan style pizza
+    image: /images/uploads/img_3418.jpeg
 drinks:
   - name: Espresso
     group: Coffee
