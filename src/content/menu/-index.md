@@ -273,6 +273,7 @@ foods:
     description: Beef, beef bacon, red sauce, parmesan, fresh basil.
     group: pasta
     price: "18.95"
+    image: /images/uploads/img_3421.jpeg
   - currency: $
     name: Carbonara di Manzo
     price: "18.95"
