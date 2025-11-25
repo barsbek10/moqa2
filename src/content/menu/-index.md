@@ -249,6 +249,7 @@ foods:
     description: Tender beef, pepper, spices, sauce
     price: "12.95"
     group: starters & salads
+    image: /images/uploads/img_3412.jpeg
   - currency: $
     name: Aqua Garden Salad
     description: Avocado, shrimp, seaweed, seasonings, sauce
