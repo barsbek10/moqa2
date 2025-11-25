@@ -232,6 +232,7 @@ foods:
     name: Crimson Beef Tofu Soup 🌶️
     price: "12.95"
     group: soups & panini
+    image: /images/uploads/img_3417.jpeg
   - currency: $
     name: Tom Yam Soup 🌶️
     price: "13.95"
