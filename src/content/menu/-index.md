@@ -146,6 +146,7 @@ foods:
     name: "Cheese "
     price: "11.95"
     group: neapolitan style pizza
+    image: /images/uploads/img_3407.jpeg
   - currency: $
     name: "Pastrami Fe "
     price: "15.95"
@@ -287,334 +288,287 @@ drinks:
     sizes:
       - label: S
         price: "2.95"
-        currency: "$"
-
+        currency: $
   - name: Latte
     group: Coffee
     sizes:
       - label: S
         price: "4.50"
-        currency: "$"
+        currency: $
       - label: L
         price: "5.25"
-        currency: "$"
-
+        currency: $
   - name: "Cherry Strawberry "
     group: Lemonades
     sizes:
       - label: S
         price: "5.95"
-        currency: "$"
-
+        currency: $
   - name: "Moqa Guava Sky "
     group: Lemonades
     sizes:
       - label: S
         price: "5.95"
-        currency: "$"
-
+        currency: $
   - name: "Basil Peach "
     group: Lemonades
     sizes:
       - label: S
         price: "5.95"
-        currency: "$"
-
+        currency: $
   - name: "Black Tea Earl Grey "
     group: Hot Tea
     sizes:
       - label: S
         price: "2.45"
-        currency: "$"
-
+        currency: $
   - name: Green Tea
     group: Hot Tea
     sizes:
       - label: S
         price: "2.45"
-        currency: "$"
-
+        currency: $
   - name: "Americano "
     group: Coffee
     sizes:
       - label: S
         price: "3.50"
-        currency: "$"
+        currency: $
       - label: L
         price: "4.25"
-        currency: "$"
-
+        currency: $
   - name: "Cappucino "
     group: Coffee
     sizes:
       - label: S
         price: "4.25"
-        currency: "$"
-
+        currency: $
   - name: "Honey Cappucino "
     group: Coffee
     sizes:
       - label: S
         price: "4.75"
-        currency: "$"
-
+        currency: $
   - name: Moqa Vanilla
     group: Coffee
     sizes:
       - label: S
         price: "5.25"
-        currency: "$"
-
+        currency: $
   - name: "Moqa Tiramisu "
     group: Coffee
     sizes:
       - label: S
         price: "5.25"
-        currency: "$"
-
+        currency: $
   - name: Caffe Mocha (white, dark, caramel)
     group: Coffee
     sizes:
       - label: S
         price: "5.25"
-        currency: "$"
-
+        currency: $
   - name: "Chai Tea Latte "
     group: Coffee
     sizes:
       - label: S
         price: "4.75"
-        currency: "$"
-
+        currency: $
   - name: Matcha Latte
     group: Coffee
     sizes:
       - label: S
         price: "5.25"
-        currency: "$"
-
+        currency: $
   - name: "Iced Cappucino "
     group: Iced Coffee
     sizes:
       - label: S
         price: "4.50"
-        currency: "$"
-
+        currency: $
   - name: "Iced Latte "
     group: Iced Coffee
     sizes:
       - label: S
         price: "4.50"
-        currency: "$"
-
+        currency: $
   - name: Iced Americano
     group: Iced Coffee
     sizes:
       - label: S
         price: "3.75"
-        currency: "$"
-
+        currency: $
   - name: "Iced Caramel Mocha "
     group: Iced Coffee
     sizes:
       - label: S
         price: "5.25"
-        currency: "$"
-
+        currency: $
   - name: Iced Espresso Tonic
     group: Iced Coffee
     sizes:
       - label: S
         price: "5.25"
-        currency: "$"
-
+        currency: $
   - name: Iced Matcha Latte
     group: Iced Coffee
     sizes:
       - label: S
         price: "5.25"
-        currency: "$"
-
+        currency: $
   - name: "Iced Matcha Mango "
     group: Iced Coffee
     sizes:
       - label: S
         price: "5.50"
-        currency: "$"
-
+        currency: $
   - name: "Iced Matcha Strawberry "
     group: Iced Coffee
     sizes:
       - label: S
         price: "5.50"
-        currency: "$"
-
+        currency: $
   - name: Iced Tea Classic
     group: Iced Coffee
     sizes:
       - label: S
         price: "5.45"
-        currency: "$"
-
+        currency: $
   - name: "Lychee Pineapple Tea "
     group: Iced Coffee
     sizes:
       - label: S
         price: "5.45"
-        currency: "$"
-
+        currency: $
   - name: Mint Mango Tea
     group: Iced Coffee
     sizes:
       - label: S
         price: "5.45"
-        currency: "$"
-
+        currency: $
   - name: "Mango Tea "
     group: Hot Tea
     sizes:
       - label: S
         price: "4.45"
-        currency: "$"
-
+        currency: $
   - name: "Berry Tea "
     group: Hot Tea
     sizes:
       - label: S
         price: "4.45"
-        currency: "$"
-
+        currency: $
   - name: Berry Tea
     group: Hot Tea
     sizes:
       - label: S
         price: "4.45"
-        currency: "$"
-
+        currency: $
   - name: "Peach Tea "
     group: Hot Tea
     sizes:
       - label: S
         price: "4.45"
-        currency: "$"
-
+        currency: $
   - name: Citrus Tea
     group: Hot Tea
     sizes:
       - label: S
         price: "4.45"
-        currency: "$"
-
+        currency: $
   - name: Grapefruit Tea
     group: Hot Tea
     sizes:
       - label: S
         price: "4.45"
-        currency: "$"
-
+        currency: $
   - name: Mojito Classic
     group: Lemonades
     sizes:
       - label: S
         price: "5.95"
-        currency: "$"
-
+        currency: $
   - name: "Mango Mojito "
     group: Lemonades
     sizes:
       - label: S
         price: "5.95"
-        currency: "$"
-
+        currency: $
   - name: "Dragon Fruit "
     group: Lemonades
     sizes:
       - label: S
         price: "5.95"
-        currency: "$"
-
+        currency: $
   - name: "Tropical "
     group: Lemonades
     sizes:
       - label: S
         price: "5.95"
-        currency: "$"
-
+        currency: $
   - name: "Ruby Sunrise "
     group: Lemonades
     sizes:
       - label: S
         price: "5.95"
-        currency: "$"
-
+        currency: $
   - name: "Orange Fresh "
     group: Freshly Squeezed Juices
     sizes:
       - label: S
         price: "7.45"
-        currency: "$"
-
+        currency: $
   - name: "Apple Fresh "
     group: Freshly Squeezed Juices
     sizes:
       - label: S
         price: "7.45"
-        currency: "$"
-
+        currency: $
   - name: "Pineapple Fresh "
     group: Freshly Squeezed Juices
     sizes:
       - label: S
         price: "8.25"
-        currency: "$"
-
+        currency: $
   - name: "Coca-Cola Can "
     group: Bottled
     sizes:
       - label: S
         price: "2.50"
-        currency: "$"
-
+        currency: $
   - name: "Coca-Cola Zero "
     group: Bottled
     sizes:
       - label: S
         price: "2.50"
-        currency: "$"
-
+        currency: $
   - name: Mexican Coca-Cola
     group: Bottled
     sizes:
       - label: S
         price: "3.45"
-        currency: "$"
-
+        currency: $
   - name: San Pelligrino (25 OZ)
     group: Bottled
     sizes:
       - label: S
         price: "4.95"
-        currency: "$"
-
+        currency: $
   - name: San Pelligrino Aranciata (11 OZ)
     group: Bottled
     sizes:
       - label: S
         price: "2.50"
-        currency: "$"
-
+        currency: $
   - name: "Apple Juice Glass "
     group: Bottled
     sizes:
       - label: S
         price: "1.95"
-        currency: "$"
-
+        currency: $
   - name: Orange Juice Glass
     group: Bottled
     sizes:
       - label: S
         price: "1.95"
-        currency: "$"
-
+        currency: $
 ---
