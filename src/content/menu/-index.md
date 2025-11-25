@@ -279,6 +279,7 @@ foods:
     price: "18.95"
     group: pasta
     description: Beef bacon, bucatini
+    image: /images/uploads/img_3413.jpeg
   - currency: $
     name: Garlic Parm Crunch Pizza 🌶️
     price: "16.95"
