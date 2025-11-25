@@ -232,7 +232,7 @@ foods:
     name: Crimson Beef Tofu Soup 🌶️
     price: "12.95"
     group: soups & panini
-    image: /images/uploads/img_3417.jpeg
+    image: /images/uploads/img_3410.jpeg
   - currency: $
     name: Tom Yam Soup 🌶️
     price: "13.95"
@@ -267,6 +267,7 @@ foods:
       rice, pickled radish
     price: "18.95"
     group: bowls
+    image: /images/uploads/img_3417.jpeg
   - currency: $
     name: Rigatoni alla Rossa
     description: Beef, beef bacon, red sauce, parmesan, fresh basil.
