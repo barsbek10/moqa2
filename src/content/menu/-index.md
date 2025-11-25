@@ -237,6 +237,7 @@ foods:
     name: Tom Yam Soup 🌶️
     price: "13.95"
     group: soups & panini
+    image: /images/uploads/img_3419.jpeg
   - currency: $
     name: Moqa Salad
     description: Chicken breast, greens and sauce, eggs, mushrooms
