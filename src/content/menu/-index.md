@@ -284,6 +284,7 @@ foods:
     name: Garlic Parm Crunch Pizza 🌶️
     price: "16.95"
     group: neapolitan style pizza
+    image: /images/uploads/img_3405.jpeg
   - currency: $
     name: Zucc & Shroom Pie
     price: "15.45"
