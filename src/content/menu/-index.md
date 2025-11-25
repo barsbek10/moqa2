@@ -213,6 +213,7 @@ foods:
     name: "Homestyle Chicken Soup "
     price: "8.95"
     group: soups & panini
+    image: /images/uploads/img_3051.jpeg
   - currency: $
     name: Rise & Shine Plate
     description: 3 eggs your way, salad, choice of sausage or beef bacon, choice of
