@@ -208,6 +208,7 @@ foods:
     name: "Fresh green Pea Soup "
     price: "7.95"
     group: soups & panini
+    image: /images/uploads/img_3006.jpeg
   - currency: $
     name: "Homestyle Chicken Soup "
     price: "8.95"
