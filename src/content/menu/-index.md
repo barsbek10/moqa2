@@ -317,30 +317,45 @@ drinks:
       - label: S
         price: "5.95"
         currency: $
+      - currency: $
+        label: L
+        price: "12.95"
   - name: "Moqa Guava Sky "
     group: Lemonades
     sizes:
       - label: S
         price: "5.95"
         currency: $
+      - currency: $
+        label: L
+        price: "12.95"
   - name: "Basil Peach "
     group: Lemonades
     sizes:
       - label: S
         price: "5.95"
         currency: $
+      - currency: $
+        label: L
+        price: "12.95"
   - name: "Black Tea Earl Grey "
     group: Hot Tea
     sizes:
       - label: S
         price: "2.45"
         currency: $
+      - currency: $
+        label: L
+        price: "4.95"
   - name: Green Tea
     group: Hot Tea
     sizes:
       - label: S
         price: "2.45"
         currency: $
+      - currency: $
+        label: L
+        price: "5.25"
   - name: "Americano "
     group: Coffee
     sizes:
@@ -356,42 +371,63 @@ drinks:
       - label: S
         price: "4.25"
         currency: $
+      - currency: $
+        label: L
+        price: "5.25"
   - name: "Honey Cappucino "
     group: Coffee
     sizes:
       - label: S
         price: "4.75"
         currency: $
+      - currency: $
+        label: L
+        price: "5.45"
   - name: Moqa Vanilla
     group: Coffee
     sizes:
       - label: S
         price: "5.25"
         currency: $
+      - currency: $
+        label: L
+        price: "5.75"
   - name: "Moqa Tiramisu "
     group: Coffee
     sizes:
       - label: S
         price: "5.25"
         currency: $
+      - currency: $
+        label: L
+        price: "5.75"
   - name: Caffe Mocha (white, dark, caramel)
     group: Coffee
     sizes:
       - label: S
         price: "5.25"
         currency: $
+      - currency: $
+        label: L
+        price: "5.75"
   - name: "Chai Tea Latte "
     group: Coffee
     sizes:
       - label: S
         price: "4.75"
         currency: $
+      - currency: $
+        label: L
+        price: "5.25"
   - name: Matcha Latte
     group: Coffee
     sizes:
       - label: S
         price: "5.25"
         currency: $
+      - currency: $
+        label: L
+        price: "5.75"
   - name: "Iced Cappucino "
     group: Iced Coffee
     sizes:
@@ -464,66 +500,90 @@ drinks:
       - label: S
         price: "4.45"
         currency: $
+      - currency: $
+        label: L
+        price: "10.95"
   - name: "Berry Tea "
     group: Hot Tea
     sizes:
       - label: S
         price: "4.45"
         currency: $
-  - name: Berry Tea
-    group: Hot Tea
-    sizes:
-      - label: S
-        price: "4.45"
-        currency: $
+      - currency: $
+        label: L
+        price: "10.95"
   - name: "Peach Tea "
     group: Hot Tea
     sizes:
       - label: S
         price: "4.45"
         currency: $
+      - currency: $
+        label: L
+        price: "10.95"
   - name: Citrus Tea
     group: Hot Tea
     sizes:
       - label: S
         price: "4.45"
         currency: $
+      - currency: $
+        label: L
+        price: "10.95"
   - name: Grapefruit Tea
     group: Hot Tea
     sizes:
       - label: S
         price: "4.45"
         currency: $
+      - currency: $
+        label: L
+        price: "10.95"
   - name: Mojito Classic
     group: Lemonades
     sizes:
       - label: S
         price: "5.95"
         currency: $
+      - currency: $
+        label: L
+        price: "12.95"
   - name: "Mango Mojito "
     group: Lemonades
     sizes:
       - label: S
         price: "5.95"
         currency: $
+      - currency: $
+        label: L
+        price: "12.95"
   - name: "Dragon Fruit "
     group: Lemonades
     sizes:
       - label: S
         price: "5.95"
         currency: $
+      - currency: $
+        label: L
+        price: "12.95"
   - name: "Tropical "
     group: Lemonades
     sizes:
       - label: S
         price: "5.95"
         currency: $
+      - currency: $
+        label: L
+        price: "12.95"
   - name: "Ruby Sunrise "
     group: Lemonades
     sizes:
       - label: S
         price: "5.95"
         currency: $
+      - currency: $
+        label: L
+        price: "12.95"
   - name: "Orange Fresh "
     group: Freshly Squeezed Juices
     sizes:
