@@ -163,6 +163,7 @@ foods:
     name: Ceasar Salad Pizza
     price: "14.95"
     group: neapolitan style pizza
+    image: /images/uploads/img_3416.jpeg
   - currency: $
     name: "Forest Mushroom Pizza "
     price: "14.95"
