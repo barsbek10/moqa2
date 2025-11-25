@@ -243,6 +243,7 @@ foods:
     description: Chicken breast, greens and sauce, eggs, mushrooms
     price: "11.95"
     group: starters & salads
+    image: /images/uploads/img_3411.jpeg
   - currency: $
     name: Heatwave Beef Salad
     description: Tender beef, pepper, spices, sauce
