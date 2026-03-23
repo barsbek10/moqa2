@@ -19,7 +19,7 @@ foods:
     image: /images/uploads/img_3132.jpeg
     description: Romaine, cherry tomatoes, parmesan, eggs, bread toast, balsamic, chicken.
     currency: $
-    price: "10.95"
+    price: "12.95"
     group: starters & salads
   - name: Mediterranean Burrata
     image: /images/uploads/img_3122.jpeg
@@ -27,13 +27,13 @@ foods:
       sundried tomatoes, arugula, avocado mousse, honey mustard sauce, olive
       oil, balsamic gel, burrata cheese.
     currency: $
-    price: "11.95"
+    price: "12.95"
     group: starters & salads
   - name: Benedict Royale
     image: /images/uploads/img_3113.jpeg
     description: Egg poacher, cold smoked salmon over brioche, avocado muss.
     currency: $
-    price: "17.95"
+    price: "18.95"
     group: breakfast
   - name: "California Breakfast "
     image: /images/uploads/img_3121.jpeg
@@ -58,15 +58,8 @@ foods:
     image: /images/uploads/img_3014.jpeg
     description: Zucchini, red onion, cherry, mushrooms, toast or hash browns.
     currency: $
-    price: "17.95"
+    price: "15.45"
     group: breakfast
-  - currency: $
-    name: Garden Harmony Salad
-    image: /images/uploads/img_3002.jpeg
-    description: Tomatoes, cucumber, red onion, greens, avocado mousse, zucchini,
-      honey mustard sauce, strawberries, sesame seeds.
-    price: "7.95"
-    group: starters & salads
   - currency: $
     name: Tuscan Caprese
     image: /images/uploads/img_3130.jpeg
@@ -129,18 +122,18 @@ foods:
     group: neapolitan style pizza
   - currency: $
     name: Fiery Pepperoni
-    price: "15.95"
+    price: "16.95"
     group: neapolitan style pizza
     image: /images/uploads/img_3074.jpeg
   - currency: $
     name: Chicken & Mushroom Delight
-    price: "14.95"
+    price: "15.95"
     group: neapolitan style pizza
     image: /images/uploads/img_3109.jpeg
   - currency: $
     name: White & Green Pesto Pizza
     image: /images/uploads/img_2994.jpeg
-    price: "13.95"
+    price: "14.95"
     group: neapolitan style pizza
   - currency: $
     name: "Cheese "
@@ -149,50 +142,46 @@ foods:
     image: /images/uploads/img_3407.jpeg
   - currency: $
     name: "Pastrami Fe "
-    price: "15.95"
-    group: neapolitan style pizza
-  - currency: $
-    name: "Sea Breeze Pizza "
     price: "16.95"
     group: neapolitan style pizza
   - currency: $
     name: "Meaty Madness "
-    price: "17.95"
+    price: "18.95"
     group: neapolitan style pizza
   - currency: $
     name: Ceasar Salad Pizza
-    price: "14.95"
+    price: "15.95"
     group: neapolitan style pizza
     image: /images/uploads/img_3416.jpeg
   - currency: $
     name: "Forest Mushroom Pizza "
-    price: "14.95"
+    price: "15.95"
     group: neapolitan style pizza
   - currency: $
     name: Burrata & Pistachio Prosciutto
-    price: "16.95"
+    price: "17.95"
     group: neapolitan style pizza
     image: /images/uploads/img_3423.jpeg
   - currency: $
     name: "Beef Pesto Panini "
-    price: "13.95"
+    price: "14.95"
     group: soups & panini
     description: Romaine, pastrami, caramelized onion, tomatoes, pesto sauce,
       american cheese.
   - currency: $
     name: "Smoked Salmon Panini "
     description: Cold smoked salmon, arugula, onion, sauce.
-    price: "13.95"
+    price: "14.95"
     group: soups & panini
   - currency: $
     name: "Mediterranean Chicken Panini "
     description: Chicken breast, greens, caramelized onion, tomato, sauce.
-    price: "12.95"
+    price: "13.95"
     group: soups & panini
   - currency: $
     name: "Premium Ribeye Steak "
     description: Baby potatoes, salad, sauce.
-    price: "34.95"
+    price: "36.95"
     group: main dishes
   - currency: $
     name: Grilled Salmon
@@ -202,7 +191,7 @@ foods:
   - currency: $
     name: "Moqa Burger "
     description: Signature beef burger with French fries
-    price: "12.95"
+    price: "14.95"
     group: main dishes
   - currency: $
     name: "Fresh green Pea Soup "
@@ -231,11 +220,6 @@ foods:
     price: "19.95"
     group: bowls
   - currency: $
-    name: Crimson Beef Tofu Soup 🌶️
-    price: "12.95"
-    group: soups & panini
-    image: /images/uploads/img_3410.jpeg
-  - currency: $
     name: Tom Yam Soup 🌶️
     price: "13.95"
     group: soups & panini
@@ -243,7 +227,7 @@ foods:
   - currency: $
     name: Moqa Salad
     description: Chicken breast, greens and sauce, eggs, mushrooms
-    price: "11.95"
+    price: "12.95"
     group: starters & salads
     image: /images/uploads/img_3411.jpeg
   - currency: $
@@ -259,23 +243,12 @@ foods:
     group: starters & salads
     image: /images/uploads/img_3420.jpeg
   - currency: $
-    name: Harbor Morning Toast
-    description: Toast, scrambled eggs, shrimps, avocado muss.
-    price: "14.95"
-    group: breakfast
-  - currency: $
     name: Seoul Flame Beef/Chicken Bowl 🌶️
     description: Stir fried beef/chicken, veggies, scrambled eggs on top of steamed
       rice, pickled radish
     price: "18.95"
     group: bowls
     image: /images/uploads/img_3417.jpeg
-  - currency: $
-    name: Rigatoni alla Rossa
-    description: Beef, beef bacon, red sauce, parmesan, fresh basil.
-    group: pasta
-    price: "18.95"
-    image: /images/uploads/img_3421.jpeg
   - currency: $
     name: Carbonara di Manzo
     price: "18.95"
@@ -284,17 +257,12 @@ foods:
     image: /images/uploads/img_3413.jpeg
   - currency: $
     name: Garlic Parm Crunch Pizza 🌶️
-    price: "16.95"
+    price: "17.95"
     group: neapolitan style pizza
     image: /images/uploads/img_3405.jpeg
   - currency: $
-    name: Zucc & Shroom Pie
-    price: "15.45"
-    group: neapolitan style pizza
-    image: /images/uploads/img_3409.jpeg
-  - currency: $
     name: Smoked Salmon Pesto Bianca
-    price: "18.45"
+    price: "19.45"
     group: neapolitan style pizza
     image: /images/uploads/img_3418.jpeg
 drinks:
