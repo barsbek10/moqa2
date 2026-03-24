@@ -639,4 +639,15 @@ drinks:
       - label: S
         price: "1.95"
         currency: $
+  - name: "Red Bull "
+    group: Bottled
+    sizes:
+      - currency: $
+        label: S
+        price: "5"
+  - name: San Pellegrino (25 OZ)
+    group: Bottled
+    sizes:
+      - currency: $
+        price: "4.95"
 ---
