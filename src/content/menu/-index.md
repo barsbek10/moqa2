@@ -265,6 +265,43 @@ foods:
     price: "19.45"
     group: neapolitan style pizza
     image: /images/uploads/img_3418.jpeg
+  - currency: $
+    name: Lentil Soup
+    price: "6.45"
+    group: soups & panini
+  - currency: $
+    name: "New York Steak Breakfast "
+    description: 10 oz New York steak, sunny-side eggs, avocado, toast.
+    price: "25.95"
+    group: breakfast
+  - currency: $
+    name: "Golden Stack Pancakes / Waffle "
+    price: "13.95"
+    group: breakfast
+  - currency: $
+    name: Ney York Steak
+    description: 14 oz New York steak served with grilled vegetables.
+    price: "32.45"
+    group: main dishes
+  - currency: $
+    name: Moqa Burger with Beef Bacon
+    description: Signature beef burger with crispy beef bacon served with French fries.
+    price: "15.45"
+    group: main dishes
+  - currency: $
+    name: Shrimp Bowl
+    description: Shrimp, avocado, rice with quinoa, salad, lime dressing.
+    price: "18.45"
+    group: bowls
+  - currency: $
+    name: Garlic Butter Shrimp Pasta
+    description: Shrimp, garlic butter sauce, spaghetti, parmesan, fresh herbs.
+    price: "18.95"
+    group: pasta
+  - currency: $
+    name: Chili Beef Pizza
+    price: "17.95"
+    group: neapolitan style pizza
 drinks:
   - name: Espresso
     group: Coffee
