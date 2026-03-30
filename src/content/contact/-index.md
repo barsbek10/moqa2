@@ -13,7 +13,7 @@ description: >-
   📧 moqacafe1551@gmail.com
 image: /images/uploads/img_3213.webp
 open_hours:
-  - "Mon-Thu: 9am - 11pm"
+  - "Mon-Thu: 6am - 11pm"
   - "Fri, Sat: 9am - 12am"
   - "Sun: 9am - 10pm"
 draft: false
