@@ -42,7 +42,7 @@ foods:
     price: "17.95"
     group: breakfast
   - name: "Turkish Style Breakfast "
-    image: /images/uploads/img_9239.jpeg
+    image: /images/uploads/img_3881.jpeg
     description: 2 scrambled eggs, Turkish sausages, white cheese, mozzarella
       cheese, salad, toast bread, honey butter, olives.
     currency: $
@@ -144,6 +144,7 @@ foods:
     name: "Pastrami Fe "
     price: "16.95"
     group: neapolitan style pizza
+    image: /images/uploads/dsc04277.jpeg
   - currency: $
     name: "Meaty Madness "
     price: "18.95"
