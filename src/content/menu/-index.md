@@ -149,6 +149,7 @@ foods:
     name: "Meaty Madness "
     price: "18.95"
     group: neapolitan style pizza
+    image: /images/uploads/food-moga2-94-of-102-.jpeg
   - currency: $
     name: Ceasar Salad Pizza
     price: "15.95"
@@ -158,6 +159,7 @@ foods:
     name: "Forest Mushroom Pizza "
     price: "15.95"
     group: neapolitan style pizza
+    image: /images/uploads/img_3841.jpeg
   - currency: $
     name: Burrata & Pistachio Prosciutto
     price: "17.95"
@@ -169,31 +171,37 @@ foods:
     group: soups & panini
     description: Romaine, pastrami, caramelized onion, tomatoes, pesto sauce,
       american cheese.
+    image: /images/uploads/img_0481.jpeg
   - currency: $
     name: "Smoked Salmon Panini "
     description: Cold smoked salmon, arugula, onion, sauce.
     price: "14.95"
     group: soups & panini
+    image: /images/uploads/img_3873.jpeg
   - currency: $
     name: "Mediterranean Chicken Panini "
     description: Chicken breast, greens, caramelized onion, tomato, sauce.
     price: "13.95"
     group: soups & panini
+    image: /images/uploads/img_3885.jpeg
   - currency: $
     name: "Premium Ribeye Steak "
     description: Baby potatoes, salad, sauce.
     price: "36.95"
     group: main dishes
+    image: /images/uploads/img_0521.jpeg
   - currency: $
     name: Grilled Salmon
     description: Grilled salmon, quinoa, sauce, salad.
     price: "25.95"
     group: main dishes
+    image: /images/uploads/img_3883.jpeg
   - currency: $
     name: "Moqa Burger "
     description: Signature beef burger with French fries
     price: "14.95"
     group: main dishes
+    image: /images/uploads/img_1069.jpeg
   - currency: $
     name: "Fresh green Pea Soup "
     price: "7.95"
@@ -210,16 +218,19 @@ foods:
       toast / pancakes / hash browns.
     price: "13.95"
     group: breakfast
+    image: /images/uploads/img_3845.jpeg
   - currency: $
     name: "Chicken Omelette "
     description: Chicken breast, beef bacon, scrambled eggs, red onion.
     price: "17.95"
     group: breakfast
+    image: /images/uploads/img_3844.jpeg
   - currency: $
     name: "Salmon Bowl "
     description: Cooked salmon cubes, rice with quinoa, salad, sauce.
     price: "19.95"
     group: bowls
+    image: /images/uploads/img_3882.jpeg
   - currency: $
     name: Tom Yam Soup 🌶️
     price: "13.95"
@@ -270,39 +281,47 @@ foods:
     name: Lentil Soup
     price: "6.45"
     group: soups & panini
+    image: /images/uploads/img_3838.jpeg
   - currency: $
     name: "New York Steak Breakfast "
     description: 10 oz New York steak, sunny-side eggs, avocado, toast.
     price: "25.95"
     group: breakfast
+    image: /images/uploads/img_3847.jpeg
   - currency: $
     name: "Golden Stack Pancakes / Waffle "
     price: "13.95"
     group: breakfast
+    image: /images/uploads/img_3875.jpeg
   - currency: $
-    name: Ney York Steak
+    name: New York Steak
     description: 14 oz New York steak served with grilled vegetables.
     price: "32.45"
     group: main dishes
+    image: /images/uploads/food-moga2-32-of-102-.jpeg
   - currency: $
     name: Moqa Burger with Beef Bacon
     description: Signature beef burger with crispy beef bacon served with French fries.
     price: "15.45"
     group: main dishes
+    image: /images/uploads/img_3840.jpeg
   - currency: $
     name: Shrimp Bowl
     description: Shrimp, avocado, rice with quinoa, salad, lime dressing.
     price: "18.45"
     group: bowls
+    image: /images/uploads/img_3834.jpeg
   - currency: $
     name: Garlic Butter Shrimp Pasta
     description: Shrimp, garlic butter sauce, spaghetti, parmesan, fresh herbs.
     price: "18.95"
     group: pasta
+    image: /images/uploads/food-moga2-52-of-102-.jpeg
   - currency: $
     name: Chili Beef Pizza
     price: "17.95"
     group: neapolitan style pizza
+    image: /images/uploads/food-moga2-94-of-102-.jpeg
 drinks:
   - name: Espresso
     group: Coffee
