@@ -17,9 +17,10 @@ foods:
     group: bowls
   - name: Classic Ceasar Twist
     image: /images/uploads/img_3132.jpeg
-    description: Romaine, cherry tomatoes, parmesan, eggs, bread toast, balsamic, chicken.
+    description: Romaine, cherry tomatoes, parmesan, eggs, bread toast, ceasar
+      dressing, chicken.
     currency: $
-    price: "12.95"
+    price: "13.95"
     group: starters & salads
   - name: Mediterranean Burrata
     image: /images/uploads/img_3122.jpeg
@@ -46,7 +47,7 @@ foods:
     description: 2 scrambled eggs, Turkish sausages, white cheese, mozzarella
       cheese, salad, toast bread, honey butter, olives.
     currency: $
-    price: "14.95"
+    price: "15.95"
     group: breakfast
   - name: Rustic Avocado Toast
     image: /images/uploads/img_3118.jpeg
@@ -65,7 +66,7 @@ foods:
     image: /images/uploads/img_3130.jpeg
     description: Fresh mozzarella cheese, pesto, arugula, balsamic, pine nuts,
       cherry tomatoes, quinoa, mango sauce.
-    price: "10.95"
+    price: "11.95"
     group: starters & salads
   - currency: $
     name: Hearty Steak Bowl
@@ -166,11 +167,10 @@ foods:
     group: neapolitan style pizza
     image: /images/uploads/img_3423.jpeg
   - currency: $
-    name: "Beef Pesto Panini "
+    name: "Beef  Panini "
     price: "14.95"
     group: soups & panini
-    description: Romaine, pastrami, caramelized onion, tomatoes, pesto sauce,
-      american cheese.
+    description: Romaine, pastrami, caramelized onion, tomatoes, american cheese.
     image: /images/uploads/img_0481.jpeg
   - currency: $
     name: "Smoked Salmon Panini "
@@ -202,11 +202,6 @@ foods:
     price: "14.95"
     group: main dishes
     image: /images/uploads/img_1069.jpeg
-  - currency: $
-    name: "Fresh green Pea Soup "
-    price: "7.95"
-    group: soups & panini
-    image: /images/uploads/img_3006.jpeg
   - currency: $
     name: "Homestyle Chicken Soup "
     price: "8.95"
@@ -258,7 +253,7 @@ foods:
     name: Seoul Flame Beef/Chicken Bowl 🌶️
     description: Stir fried beef/chicken, veggies, scrambled eggs on top of steamed
       rice, pickled radish
-    price: "18.95"
+    price: "19.95"
     group: bowls
     image: /images/uploads/img_3417.jpeg
   - currency: $
@@ -279,12 +274,12 @@ foods:
     image: /images/uploads/img_3418.jpeg
   - currency: $
     name: Lentil Soup
-    price: "6.45"
+    price: "7.95"
     group: soups & panini
     image: /images/uploads/img_3838.jpeg
   - currency: $
-    name: "New York Steak Breakfast "
-    description: 10 oz New York steak, sunny-side eggs, avocado, toast.
+    name: "Steak Breakfast "
+    description: 10 oz steak, sunny-side eggs, avocado, toast.
     price: "25.95"
     group: breakfast
     image: /images/uploads/img_3847.jpeg
@@ -294,29 +289,11 @@ foods:
     group: breakfast
     image: /images/uploads/img_3875.jpeg
   - currency: $
-    name: New York Steak
-    description: 14 oz New York steak served with grilled vegetables.
-    price: "32.45"
-    group: main dishes
-    image: /images/uploads/food-moga2-32-of-102-.jpeg
-  - currency: $
     name: Moqa Burger with Beef Bacon
     description: Signature beef burger with crispy beef bacon served with French fries.
     price: "15.45"
     group: main dishes
     image: /images/uploads/img_3840.jpeg
-  - currency: $
-    name: Shrimp Bowl
-    description: Shrimp, avocado, rice with quinoa, salad, lime dressing.
-    price: "18.45"
-    group: bowls
-    image: /images/uploads/img_3834.jpeg
-  - currency: $
-    name: Garlic Butter Shrimp Pasta
-    description: Shrimp, garlic butter sauce, spaghetti, parmesan, fresh herbs.
-    price: "18.95"
-    group: pasta
-    image: /images/uploads/food-moga2-52-of-102-.jpeg
   - currency: $
     name: Chili Beef Pizza
     price: "17.95"
