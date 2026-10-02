@@ -6,6 +6,7 @@ description: Discover our delicious all-day menu — from hearty breakfasts and
   in-house. At Moqa Café, every dish is made with love, fresh ingredients, and a
   touch of creativity.
 image: ""
+menu_pdf: /documents/menuV3.pdf
 draft: false
 default_food_image: /images/menu/coming_soon.png
 foods:

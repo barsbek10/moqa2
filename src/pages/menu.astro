@@ -8,7 +8,7 @@ import Foodapps from "@/partials/Foodapps.astro";
 import Button from "@/shortcodes/Button.tsx";
 
 const menu = (await getEntry("menu", "-index")) as CollectionEntry<"menu">;
-const { title, description, default_food_image, foods, drinks = [] } = menu.data;
+const { title, description, default_food_image, foods, drinks = [], menu_pdf } = menu.data;
 
 const groups = [
   ...new Set(foods.map((food) => food.group.toLocaleLowerCase())),
@@ -34,11 +34,13 @@ const drinkGroups = [
           <p class="text-balance font-bold pb-2">
             Check out our most up-to-date and full menu in pdf
           </p>
-          <Button
-            link="/menuV3.pdf"
-            label="Menu.pdf"
-            className="w-fit bg-primary hover:border-primary! text-white transition-colors! duration-10 hover:text-text-gallery-back"
-          />
+          {menu_pdf && (
+            <Button
+              link={menu_pdf}
+              label="Menu.pdf"
+              className="w-fit bg-primary hover:border-primary! text-white transition-colors! duration-10 hover:text-text-gallery-back"
+            />
+          )}
         </div>
       </div>
 

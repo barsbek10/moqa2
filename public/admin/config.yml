@@ -5,6 +5,10 @@ backend:
 media_folder: "public/images/uploads" # Location where files will be stored in the repo
 public_folder: "/images/uploads" # The src attribute for uploaded media
 
+# Document upload settings
+document_folder: "public/documents" # Location where documents (PDFs, etc.) will be stored
+document_public_folder: "/documents" # The src attribute for uploaded documents
+
 collections:
   - name: "homepage"
     label: "Homepage"
@@ -201,11 +205,14 @@ collections:
         label: "Menu Content"
         file: "src/content/menu/-index.md"
         format: "frontmatter"
+        media_folder: "public/documents"
+        public_folder: "/documents"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Meta Title", name: "meta_title", widget: "string" }
           - { label: "Description", name: "description", widget: "text" }
           - { label: "Image", name: "image", widget: "image", required: false }
+          - { label: "Menu PDF", name: "menu_pdf", widget: "file", required: false }
           - { label: "Draft", name: "draft", widget: "boolean", default: false }
 
           - label: "Foods"
