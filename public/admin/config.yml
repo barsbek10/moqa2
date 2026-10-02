@@ -201,6 +201,32 @@ collections:
     label: "Menu Page"
     delete: false
     files:
+      - name: "menu_groups"
+        label: "Menu Groups"
+        file: "src/content/menu/groups.md"
+        format: "frontmatter"
+        fields:
+          - label: "Menu Groups"
+            name: "groups"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Description", name: "description", widget: "text", required: false }
+
+      - name: "drink_groups"
+        label: "Drink Groups"
+        file: "src/content/menu/drink-groups.md"
+        format: "frontmatter"
+        fields:
+          - label: "Drink Groups"
+            name: "groups"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Description", name: "description", widget: "text", required: false }
+
       - name: "menu_index"
         label: "Menu Content"
         file: "src/content/menu/-index.md"
@@ -235,9 +261,10 @@ collections:
               - label: "Group"
                 name: "group"
                 widget: "select"
+                hint: "Manage menu groups in the 'Menu Groups' tab above"
                 options:
                   - { label: "Breakfast", value: "breakfast" }
-                  - { label: "Starters & Salads", value: "starters & salads" } # keeps your existing value
+                  - { label: "Starters & Salads", value: "starters & salads" }
                   - { label: "Soups & Panini", value: "soups & panini" }
                   - { label: "Sides", value: "sides" }
                   - { label: "Bowls", value: "bowls" }
@@ -262,6 +289,7 @@ collections:
               - label: "Group"
                 name: "group"
                 widget: "select"
+                hint: "Manage drink groups in the 'Drink Groups' tab above"
                 allow_add: true
                 options:
                   - { label: "Coffee", value: "Coffee" }
