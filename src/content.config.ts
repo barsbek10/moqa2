@@ -249,27 +249,21 @@ const menuCollection = defineCollection({
 
 // Menu Groups collection schema
 const menuGroupsCollection = defineCollection({
-  loader: glob({ pattern: "-index.{md,mdx}", base: "src/content/menu_groups" }),
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/menu_groups" }),
   schema: z.object({
-    groups: z.array(
-      z.object({
-        name: z.string(),
-        description: z.string().optional(),
-      }),
-    ),
+    name: z.string(),
+    slug: z.string(),
+    description: z.string().optional(),
   }),
 });
 
 // Drink Groups collection schema
 const drinkGroupsCollection = defineCollection({
-  loader: glob({ pattern: "-index.{md,mdx}", base: "src/content/drink_groups" }),
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/drink_groups" }),
   schema: z.object({
-    groups: z.array(
-      z.object({
-        name: z.string(),
-        description: z.string().optional(),
-      }),
-    ),
+    name: z.string(),
+    slug: z.string(),
+    description: z.string().optional(),
   }),
 });
 
