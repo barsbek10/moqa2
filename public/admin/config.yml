@@ -197,35 +197,10 @@ collections:
 
           - { label: "Draft", name: "draft", widget: "boolean", default: false }
 
-  - name: "menu_groups"
-    label: "Menu Groups"
-    folder: "src/content/menu_groups"
-    create: true
-    identifier_field: "slug"
-    slug: "{{slug}}"
-    format: "frontmatter"
-    fields:
-      - { label: "Name", name: "name", widget: "string" }
-      - { label: "Slug", name: "slug", widget: "string" }
-      - { label: "Description", name: "description", widget: "text", required: false }
-
-  - name: "drink_groups"
-    label: "Drink Groups"
-    folder: "src/content/drink_groups"
-    create: true
-    identifier_field: "slug"
-    slug: "{{slug}}"
-    format: "frontmatter"
-    fields:
-      - { label: "Name", name: "name", widget: "string" }
-      - { label: "Slug", name: "slug", widget: "string" }
-      - { label: "Description", name: "description", widget: "text", required: false }
-
   - name: "menu"
     label: "Menu Page"
     delete: false
     files:
-
       - name: "menu_index"
         label: "Menu Content"
         file: "src/content/menu/-index.md"
@@ -259,11 +234,23 @@ collections:
               - { label: "Price", name: "price", widget: "string" }
               - label: "Group"
                 name: "group"
-                widget: "relation"
-                collection: "menu_groups"
-                search_fields: ["name"]
-                display_fields: ["name"]
-                value_field: "slug"
+                widget: "select"
+                options:
+                  - { label: "Breakfast", value: "breakfast" }
+                  - { label: "Starters & Salads", value: "starters & salads" } # keeps your existing value
+                  - { label: "Soups & Panini", value: "soups & panini" }
+                  - { label: "Sides", value: "sides" }
+                  - { label: "Bowls", value: "bowls" }
+                  - { label: "Main Dishes", value: "main dishes" }
+                  - { label: "Pasta", value: "pasta" }
+                  - { label: "Neapolitan Style Pizza", value: "neapolitan style pizza" }
+                  - { label: "Drinks: Hot Coffee", value: "drinks - hot coffee" }
+                  - { label: "Drinks: Iced Coffee", value: "drinks - iced coffee" }
+                  - { label: "Drinks: Hot Tea", value: "drinks - hot tea" }
+                  - { label: "Drinks: Lemonades", value: "drinks - lemonades" }
+                  - { label: "Drinks: Bottled", value: "drinks - bottled" }
+                  - { label: "Drinks: Freshly Squeezed Juices", value: "drinks - freshly squeezed juices" }
+                allow_add: true
 
           - label: "Drinks"
             name: "drinks"
@@ -274,11 +261,15 @@ collections:
 
               - label: "Group"
                 name: "group"
-                widget: "relation"
-                collection: "drink_groups"
-                search_fields: ["name"]
-                display_fields: ["name"]
-                value_field: "slug"
+                widget: "select"
+                allow_add: true
+                options:
+                  - { label: "Coffee", value: "Coffee" }
+                  - { label: "Iced Coffee", value: "Iced Coffee" }
+                  - { label: "Hot Tea", value: "Hot Tea" }
+                  - { label: "Lemonades", value: "Lemonades" }
+                  - { label: "Bottled", value: "Bottled" }
+                  - { label: "Freshly Squeezed Juices", value: "Freshly Squeezed Juices" }
 
               # NEW — sizes array (S / L / XL etc.)
               - label: "Sizes"
