@@ -261,6 +261,7 @@ collections:
               - label: "Group"
                 name: "group"
                 widget: "select"
+                allow_add: true
                 hint: "Manage menu groups in the 'Menu Groups' tab above"
                 options:
                   - { label: "Breakfast", value: "breakfast" }
@@ -275,9 +276,8 @@ collections:
                   - { label: "Drinks: Iced Coffee", value: "drinks - iced coffee" }
                   - { label: "Drinks: Hot Tea", value: "drinks - hot tea" }
                   - { label: "Drinks: Lemonades", value: "drinks - lemonades" }
-                  - { label: "Drinks: Bottled", value: "drinks - bottled" }
+                  - { label: ": Bottled", value: "drinks - bottled" }
                   - { label: "Drinks: Freshly Squeezed Juices", value: "drinks - freshly squeezed juices" }
-                allow_add: true
 
           - label: "Drinks"
             name: "drinks"
