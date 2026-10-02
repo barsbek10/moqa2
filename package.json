@@ -4,6 +4,10 @@
   "description": "Cuisine - Food; Restaurant Astro Template",
   "author": "Themefisher",
   "license": "UNLICENSED",
+  "engines": {
+    "node": ">=22.0.0",
+    "yarn": ">=1.22.0"
+  },
   "packageManager": "yarn@1.22.22",
   "scripts": {
     "dev": "astro dev",
@@ -50,7 +54,6 @@
     "@types/react": "19.1.9",
     "@types/react-dom": "19.1.7",
     "eslint": "^9.32.0",
-    "npm": "^11.6.2",
     "prettier": "^3.6.2",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.14",

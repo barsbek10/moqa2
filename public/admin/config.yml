@@ -203,7 +203,7 @@ collections:
     files:
       - name: "menu_groups"
         label: "Menu Groups"
-        file: "src/content/menu/groups.md"
+        file: "src/content/menu_groups/-index.md"
         format: "frontmatter"
         fields:
           - label: "Menu Groups"
@@ -216,7 +216,7 @@ collections:
 
       - name: "drink_groups"
         label: "Drink Groups"
-        file: "src/content/menu/drink-groups.md"
+        file: "src/content/drink_groups/-index.md"
         format: "frontmatter"
         fields:
           - label: "Drink Groups"

@@ -212,7 +212,7 @@ const testimonialSectionCollection = defineCollection({
 
 // Menu collection schema
 const menuCollection = defineCollection({
-  loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/menu" }),
+  loader: glob({ pattern: "-index.{md,mdx}", base: "src/content/menu" }),
   schema: z.object({
     title: z.string(),
     meta_title: z.string().optional(),
@@ -247,6 +247,32 @@ const menuCollection = defineCollection({
   }),
 });
 
+// Menu Groups collection schema
+const menuGroupsCollection = defineCollection({
+  loader: glob({ pattern: "-index.{md,mdx}", base: "src/content/menu_groups" }),
+  schema: z.object({
+    groups: z.array(
+      z.object({
+        name: z.string(),
+        description: z.string().optional(),
+      }),
+    ),
+  }),
+});
+
+// Drink Groups collection schema
+const drinkGroupsCollection = defineCollection({
+  loader: glob({ pattern: "-index.{md,mdx}", base: "src/content/drink_groups" }),
+  schema: z.object({
+    groups: z.array(
+      z.object({
+        name: z.string(),
+        description: z.string().optional(),
+      }),
+    ),
+  }),
+});
+
 // Testimonials Section collection schema
 const foodAppsSectionCollection = defineCollection({
   loader: glob({
@@ -270,6 +296,8 @@ const foodAppsSectionCollection = defineCollection({
 export const collections = {
   homepage: homepageCollection,
   menu: menuCollection,
+  menu_groups: menuGroupsCollection,
+  drink_groups: drinkGroupsCollection,
   blog: blogCollection,
   pages: pagesCollection,
   about: aboutCollection,
