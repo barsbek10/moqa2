@@ -16,4 +16,6 @@ groups:
     description: Handmade pasta dishes
   - name: Neapolitan Style Pizza
     description: Traditional Neapolitan pizzas
+  - name: Desserts
+    description: Yummy desserts
 ---
