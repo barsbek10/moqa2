@@ -243,6 +243,7 @@ collections:
                   - { label: "Bowls", value: "bowls" }
                   - { label: "Main Dishes", value: "main dishes" }
                   - { label: "Pasta", value: "pasta" }
+                  - { label: "Desserts", value: "desserts" }
                   - { label: "Neapolitan Style Pizza", value: "neapolitan style pizza" }
                   - { label: "Drinks: Hot Coffee", value: "drinks - hot coffee" }
                   - { label: "Drinks: Iced Coffee", value: "drinks - iced coffee" }
